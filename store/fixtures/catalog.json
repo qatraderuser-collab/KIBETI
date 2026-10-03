@@ -1,0 +1,3368 @@
+[
+{
+ "model": "store.category",
+ "pk": 1,
+ "fields": {
+  "name": "Handbags",
+  "slug": "handbags"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 1,
+ "fields": {
+  "category": 1,
+  "name": "Denri Mini Zuri Handbag | Detachable Adjustable Strap & Multiple Compartments",
+  "slug": "mini-zuri-handbag",
+  "brand": "Denri Store",
+  "description": "Mini Zuri Handbag SIZE LENGTH 10', WIDTH 4', HEIGHT 8.5' FEATURES A versatile accessory designed for work, evenings out, and everything in between. Crafted from high-quality leather, our handbags are the epitome of sophistication and durability. Ergonomic handles and a detachable shoulder strap for a comfortable and stylish carrying experience. Exemplary attention to detail and superior stitching for a handbag that stands the test of time. Elevate your daily style with the Mini Zuri Handbag, a must-have crossbody bag that perfectly combines fashion and functionality. Crafted from high-quality leather and designed with meticulous attention to detail, this versatile handbag is your go-to accessory for any occasion. Whether you're running errands, meeting friends, or attending a special event, this crossbody handbag ensures you carry your essentials with both comfort and convenience. The Mini Zuri Handbag is equipped with an adjustable strap that provides you with the flexibility to wear it at your preferred length, making it ideal for everyday use. It features multiple spacious compartments to keep your belongings organized and easily accessible, while the ergonomic handles ensure a comfortable carrying experience. The detachable shoulder strap offers versatility, allowing you to switch between carrying it as a handbag or as a crossbody for hands-free convenience. This leather handbag is designed to withstand the test of time with its superior stitching and exemplary attention to detail, ensuring long-lasting durability. The sleek and sophisticated design complements both casual and formal outfits, making it the perfect accessory for work, evenings out, and everything in between. Mini Zuri Handbag is available in elegant colors that add a touch of luxury and style to your wardrobe. With its spacious interior, the Mini Zuri Handbag provides ample space to carry your phone, wallet, keys, makeup, and other essentials, making it a practical choice for the modern woman on the go. Discover the ideal combination of style, practicality, and elegance with the Mini Zuri Handbag",
+  "price": "2600.00",
+  "compare_at_price": "2600.00",
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.113Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 2,
+ "fields": {
+  "category": 1,
+  "name": "Denri Claire | 3-in-1 Convertible Handbag | Fits up to 17″ Laptop, Water resistant",
+  "slug": "claire-handbag",
+  "brand": "Denri Africa",
+  "description": "Introducing the Claire 3-in-1 Handbag — a luxurious, versatile handbag designed for the modern woman in Kenya who values both elegance and utility. Whether you're heading to work, travelling across the country, or simply looking for a stylish everyday handbag, the Claire is your perfect match. This multi-functional women's bag seamlessly transitions between a fashion handbag, a professional briefcase, and a sleek travel tote, offering 3-in-1 versatility that adapts to your dynamic lifestyle. Crafted for modern professionals, it features a dedicated padded laptop compartment that fits laptops up to 17 inches, keeping your tech secure during commutes, flights, or office hours. With a spacious interior, the Claire handbag holds all your daily essentials—documents, wallets, beauty accessories, and more. It includes a discreet pouch for sanitary towels or tampons, offering privacy and convenience for personal care. The waterproof exterior protects your belongings from rain or spills, making it an ideal weather-resistant handbag for everyday and travel use. For those on the go, a built-in suitcase attachment allows you to effortlessly slide the bag over your trolley handle, turning it into a travel-friendly handbag that keeps your hands free in airports and stations. Available in five stunning colors—black, red, grey, spice, and caramel—the Claire 3-in-1 Handbag blends chic design with everyday practicality, making it a must-have accessory for professionals, students, travelers, and stylish women alike. Elevate your look with this luxury handbag in Kenya that offers the perfect balance of fashion, function, and convenience.",
+  "price": "3000.00",
+  "compare_at_price": null,
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.128Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 3,
+ "fields": {
+  "category": 1,
+  "name": "Denri Lola Handbag | Internal pockets Tote | Fits up to 13\" Laptop",
+  "slug": "lola-handbag",
+  "brand": "Denri Store",
+  "description": "Lola Handbag SIZE LENGTH 13', WIDTH 4', HEIGHT 11' FEATURES 3 Internal pockets. The Lola handbag fits a 13 inch laptop, notebooks and work files as well. Firm handles. Variety of unique colors. The Lola Handbag is a chic, fashion-forward plush tote bag designed for the modern woman who values both style and functionality. With its sleek silhouette and letter-detailed exterior, this trendy women’s handbag stands out as a versatile accessory perfect for shopping, work, or casual day-outs. Crafted with care, the Lola plush tote features three internal pockets, providing ample room for organizing your daily essentials — from your 13-inch laptop and notebooks to cosmetics, keys, and wallet. Whether you’re headed to the office, attending a meeting, or running errands, this stylish work handbag ensures everything stays in place. The firm handles offer durability and a comfortable grip, while the structured design maintains its shape even when fully loaded. Available in a variety of unique color options, the Lola Handbag is a standout piece that easily complements any outfit — from business casual to relaxed streetwear. Lightweight yet spacious, this women’s tote bag is ideal as a daily carryall, shopping bag, or even a weekend shoulder bag. Its compact width and generous height allow it to sit comfortably under your arm or in your hand, making it a practical and fashionable choice for everyday use. Upgrade your bag collection with the Lola Handbag — the perfect balance of trendy design, organization, and comfort for stylish women on the move.",
+  "price": "2100.00",
+  "compare_at_price": "2100.00",
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.134Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 4,
+ "fields": {
+  "category": 1,
+  "name": "Denri Jamela Laptop Handbag | Padded laptop compartment; multi pockets | 3-in-1 carry.",
+  "slug": "jamela-laptop-handbag",
+  "brand": "Denri Store",
+  "description": "Jamela Laptop Handbag The Jamela Laptop Handbag is the ultimate fusion of fashionable function and professional utility—designed specifically for the modern woman on the move. This 3-in-1 women’s laptop handbag offers a stylish and versatile solution for carrying your daily tech essentials, whether you're commuting to work, heading to a business meeting, or working from your favorite café. Crafted with premium materials and a sleek silhouette, the Jamela bag fits laptops up to 15 inches and includes a padded laptop compartment to ensure your device stays secure. It features four internal pockets that make organization effortless, offering ample space for chargers, notebooks, tablets, wallets, and smartphones. The structured, sturdy handles provide a reliable grip, while the slim yet spacious design easily transitions from office bag to casual day handbag. Whether you’re dressing for a boardroom or brunch, the Jamela Laptop Handbag adds a touch of elegance, professionalism, and everyday practicality. It’s the perfect choice for anyone seeking a laptop tote bag, work handbag, or multi-functional women’s briefcase that doesn’t compromise on style. SIZE LENGTH 13', WIDTH 4', HEIGHT 15' FEATURES 4 Internal pockets. 1 adequately sized laptop compartment. Sturdy and firm handles.",
+  "price": "3600.00",
+  "compare_at_price": "3600.00",
+  "tags": "Bags in Nairobi, full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.145Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 5,
+ "fields": {
+  "category": 1,
+  "name": "Denri Skye Handbag | Vegan Leather, Hidden Press-Button Closure | Chic & Featherlight",
+  "slug": "skye-handbag",
+  "brand": "Denri",
+  "description": "📦 Product Overview A show-stopping collectible handbag designed for galas, dates, and special events. Combines artistic textures , vibrant colours, and hidden functionality to turn heads while keeping essentials secure. 🧵 Materials &amp; Construction Main Material : Tactile vegan leather (smooth + woven texture combo). Lining : Polyester (stain-resistant). Closure : Hidden press-button system (discreet security). Colors : Mustard Yellow, Black, Maroon. 📐 Design Features Feature Details Dimensions 8.6\"W x 7.8\"L x 12.8\"H (compact but spacious). Capacity Fits phone, wallet, makeup, keys + zipped pocket for valuables. Closure Press-button sealed opening (secure yet elegant). Straps Adjustable pull handles (hugs body comfortably). Organization Main compartment + zipped interior pocket . Weight 0.4kg (featherlight for all-night wear). 🎯 Target Market Primary : Fashion-forward women (18–35), gift buyers (Mothers’ Day, birthdays). Occasions : Parties, galas, dates, weddings, red carpets. 📋 Key Selling Points ✅ Texture contrast — smooth + woven vegan leather (unique tactile appeal). ✅ Hidden press-button — security without compromising aesthetics. ✅ Vibrant colors — mustard yellow/maroon make bold style statements. ✅ Adjustable straps — stays close to the body for hands-free moments. 🛠️ Care Instructions Cleaning : Spot clean with damp cloth; air dry. Storage : Keep stuffed with tissue to maintain shape.",
+  "price": "2000.00",
+  "compare_at_price": null,
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.156Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 6,
+ "fields": {
+  "category": 1,
+  "name": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "slug": "elyse",
+  "brand": "Denri Store",
+  "description": "Elyse Handbag SIZE LENGTH 14.5', WIDTH 5', HEIGHT 12' FEATURES Crafted from the finest materials, this handbag exudes luxury and durability. Ample space for all your essentials, with multiple pockets for superior organization. Classic and chic, available in various colors to match your personal style. Meticulously crafted with attention to detail, ensuring a long-lasting, high-quality accessory The Elyse 3-in-1 Handbag is the ultimate combination of elegance, versatility, and functionality — a must-have handbag for the modern woman in Kenya. Crafted from premium materials, this luxury handbag is designed to elevate your wardrobe with its chic and classic silhouette, while offering the practicality of three bags in one. Whether you're navigating a busy workday, tackling errands, or heading out for an evening occasion, the Elyse Handbag adapts effortlessly to your lifestyle. Featuring a spacious interior with multiple compartments and organizational pockets, this stylish women’s handbag ensures you stay organized while on the move. With a length of 14.5 inches, width of 5 inches, and height of 12 inches, it provides ample room for all your essentials — from your phone, wallet, and keys to makeup, documents, and more. Its durable design, available in a range of sophisticated color options, blends perfectly with both professional and casual outfits. The attention to detail in every stitch reflects its high-quality craftsmanship, making the Elyse a timeless accessory you can rely on day after day. Whether you're searching for a fashionable work bag, a trendy everyday tote, or a multipurpose handbag for travel, the Elyse 3-in-1 Handbag checks every box. It’s not just a handbag for women — it’s your daily statement of style, strength, and confidence.",
+  "price": "3100.00",
+  "compare_at_price": "3100.00",
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.165Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 7,
+ "fields": {
+  "category": 1,
+  "name": "Denri Sierra Handbag | Kikapu-Style Tote | 4 Zipped Compartments, Metal Lock & Sling",
+  "slug": "sierra-handbag",
+  "brand": "Denri",
+  "description": "The Sierra Handbag is a versatile, stylish, and practical ladies' bag made from vegan leather with a woven texture . Designed for women who need both functionality and elegance , the Sierra Handbag features a unique convertible design , transforming from a large Kikapu-style tote to a compact handbag . This makes it suitable for a variety of occasions, from work to travel and casual outings. With four (4) large zipped compartments , a secure metal lock clasp , and a matching sling bag , the Sierra Handbag is built for organisation, security, and convenience. Its available in 3 colors, Cream , Blac k and Brown. Measurement Size Height Approx. 35 cm Width Approx. 30 cm Depth Approx. 15 cm Handle Drop Approx. 25 cm Carrying Capacity 10 kg max The Sierra Handbag is a premium, multi-functional ladies’ handbag designed to meet the style and storage needs of the modern woman in Kenya. Crafted from high-quality vegan leather with a distinctive woven texture, this women’s fashion bag combines elegance with durability. Its convertible design allows it to effortlessly transform from a spacious Kikapu-style tote bag to a compact, chic handbag, offering unmatched versatility for every occasion — from office wear and travel bags for women to daily errands and casual outings. Engineered for convenience and organization, the Sierra Handbag features four spacious zipped compartments, providing ample room for essentials such as wallets, makeup kits, notebooks, mobile phones, and more. A secure metal lock clasp ensures the safety of your items, while a matching sling bag adds a stylish, coordinated touch, giving you two bags in one for extra flexibility. With a carrying capacity of up to 10 kg, this stylish handbag for women is both practical and fashionable. Its soft yet structured form, combined with a comfortable 25 cm handle drop, makes it easy to carry by hand or over the shoulder. Available in three elegant colors — Cream, Black, and Brown — the Sierra Handbag suits any personal style or wardrobe. Perfect for women looking for a large handbag, the Sierra offers functional fashion with Kenyan flair. Whether you're shopping for a handbag for work, a stylish weekend tote, or an elegant travel purse, this bag checks all the boxes.",
+  "price": "2700.00",
+  "compare_at_price": "2700.00",
+  "tags": "Designer Handbags, full-price, handbags for women",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.182Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 8,
+ "fields": {
+  "category": 1,
+  "name": "Denri Zuri Handbag | Durable Lightweight Build, 2 Internal Pockets | Chic & Spacious",
+  "slug": "zuri-handbag",
+  "brand": "Denri Store",
+  "description": "Zuri Handbag SIZE LENGTH 13', WIDTH 5', HEIGHT 10' FEATURES 2 Internal pockets. Sturdy lightweight bag. Fantastic storage capacity for your essentials. The Zuri Handbag by Denri Africa is a perfect blend of style, functionality, and comfort. Crafted from durable materials, this lightweight handbag is designed for women who appreciate both fashion and practicality. Its sleek and minimalist design makes it an ideal accessory for various occasions, from daily errands to evening outings. Measuring 13 inches in length, 5 inches in width, and 10 inches in height, the Zuri Handbag offers ample space without compromising on style. It features two internal pockets, providing organized storage for your essentials such as your phone, wallet, and makeup. The sturdy construction ensures that the bag maintains its shape, while the lightweight design allows for comfortable carrying throughout the day. Available in a variety of elegant colors, including Caramel, Black, Spice Brown, Grey, Red, Beige, and Chocolate, the Zuri Handbag complements any outfit and suits every personal style. Its versatile design makes it suitable for both casual and formal settings, allowing you to transition seamlessly from day to night. Whether you're looking for a reliable everyday bag or a chic accessory for special occasions, the Zuri Handbag is a stylish and practical choice that embodies the essence of modern femininity.",
+  "price": "3600.00",
+  "compare_at_price": "3600.00",
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.194Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 9,
+ "fields": {
+  "category": 1,
+  "name": "Denri Cathy Handbag | Tote-Shoulder Bag |  Vegan Leather with Ankara Fabric",
+  "slug": "cathy-handbag",
+  "brand": "Denri",
+  "description": "The Cathy Handbag is a modern, fashion-forward bag designed for individuals who appreciate style, practicality, and cultural expression. Crafted from high-quality vegan leather and enhanced with Ankara fabric panels , this handbag combines elegance with durability. Designed for both casual and professional use, it meets the needs of a wide range of consumers looking for an eco-friendly, functional, and statement-making accessory. Category : Women’s Handbags Type : Everyday Tote/Shoulder Bag Style : Contemporary African-Inspired Fashion Functionality : Work, casual, and semi-formal settings Sustainability : Made with cruelty-free vegan leather DIMENSIONS LENGTH 11', HEIGHT 9.5', WIDTH 5'",
+  "price": "2000.00",
+  "compare_at_price": null,
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.210Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 10,
+ "fields": {
+  "category": 1,
+  "name": "Denri Oval Handbag | Lightweight, Firm Handle, 2 Internal Pockets, Quality Leather",
+  "slug": "oval-handbag",
+  "brand": "Denri Store",
+  "description": "Oval Handbag SIZE LENGTH 11', WIDTH 5', HEIGHT 8' FEATURES 2 Internal pockets. Lightweight. Firm handle. Step into timeless elegance with the Oval Handbag from Denri Africa, a must-have statement piece for today’s modern fashion lover. Designed with a sleek, oval silhouette, this women’s handbag combines high-end style and practical design, making it the perfect handbag for formal events, casual outings, date nights, or everyday errands. Whether you're dressing up for a wedding, brunch, or simply elevating your office look, this fashion-forward handbag adds a refined touch to any outfit. Crafted from durable, high-quality materials, the Oval Handbag features a firm top handle for a structured, classic look and easy grip. Its lightweight design ensures comfort during all-day use, while the two internal pockets provide smart organization for your phone, makeup, keys, wallet, or other daily essentials. Measuring 11 inches in length, 5 inches in width, and 8 inches in height, it offers compact yet ample space to carry your must-haves without bulk. The minimalist yet chic aesthetic of this designer-inspired handbag makes it a versatile fashion accessory for women in Kenya and beyond. Available in a range of eye-catching finishes, the Denri Oval Handbag is the ideal blend of style, elegance, and everyday function. Make a bold fashion statement with this timeless bag that’s as practical as it is pretty.",
+  "price": "1600.00",
+  "compare_at_price": "1600.00",
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.220Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 11,
+ "fields": {
+  "category": 1,
+  "name": "Denri College Handbag | Fits 14″ Laptop | Roomy with Zip Closure, Interior Pockets",
+  "slug": "college-handbag",
+  "brand": "Denri Store",
+  "description": "College Handbag SIZE LENGTH 12', WIDTH 4', HEIGHT 13' FEATURES Zip closure. 2 interior pockets. High-quality synthetic leather. Roomy and flexible interior. SIZE GUIDE Deep and roomy to accommodate up to 14' laptop, notebooks, documents, makeup, glasses, and other essentials. CARE AND MAINTENANCE Please handle with care for enhanced durability. Don't use any chemical material to wash the bag. Don't wash the bag in the washing machine. Don't iron it. Elevate your everyday campus style with the College Handbag — a fashionable, functional, and versatile handbag designed specifically for students in Kenya who want to stay organized while looking effortlessly chic. Whether you're rushing to lectures, attending group study sessions, or enjoying downtime with friends, this college bag ensures your daily essentials are stylishly secured and easily accessible. Crafted from high-quality synthetic leather, the College Handbag offers a sleek and durable exterior that withstands the demands of a busy student lifestyle. The roomy interior is thoughtfully designed with two interior pockets, allowing you to organize your belongings like your 14-inch laptop, notebooks, documents, stationery, makeup, glasses, and more with ease. Its zip closure keeps everything safe while maintaining a polished and sophisticated look. This student handbag is not only ideal for college and university life but also works great as a work bag, everyday tote, or stylish carry-all for urban settings. With dimensions of 12 inches in length, 4 inches in width, and 13 inches in height, it's the perfect size for balancing practicality with trend-forward aesthetics. Comfortable to carry and made with long-lasting materials, this ladies college handbag is the go-to choice for those who value both fashion and functionality in their academic gear. Pair it with any outfit and step out with confidence, knowing you have a reliable and eye-catching accessory by your side.",
+  "price": "2600.00",
+  "compare_at_price": null,
+  "tags": "College Handbag in Kenya, College Handbag in Nairobi, full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.231Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 12,
+ "fields": {
+  "category": 1,
+  "name": "Denri Aurora Handbag | Mini Shoulder & Sling bag | Hand-stitched Leather, Metal Lock Stitch",
+  "slug": "aurora-handbag",
+  "brand": "Denri Store",
+  "description": "Aurora Handbag SIZE LENGTH 8', WIDTH 3', HEIGHT 7' FEATURES Hand-stitched leather purse. Signature logo embossed bag. Spacious interior. Metallic finish clutches. Detachable and interchangeable straps. Small clutch for essentials. Elevate your wardrobe with the Aurora Handbag, a statement piece that merges bold fashion with everyday functionality. Designed for the modern woman in Kenya who values sophistication and quality, this luxury handbag showcases exquisite metal lock stitch detailing for a high-end finish. The hand-stitched leather construction speaks volumes of its craftsmanship, while the signature logo embossing adds a mark of elegance. Compact yet spacious, the Aurora leather purse offers a well-structured, spacious interior that easily accommodates your everyday essentials—from your phone and wallet to cosmetics and keys. It includes a small clutch for quick-grab items, making it a practical yet fashionable accessory for any occasion. Whether you're heading to work, a date, or a weekend outing, this metallic finish handbag transitions seamlessly from day to night. The detachable and interchangeable shoulder straps give you versatility—wear it as a crossbody bag, a shoulder bag, or carry it as a top-handle handbag. With a compact size of 8 inches in length, 3 inches in width, and 7 inches in height, it's ideal for women who prefer a mini handbag without compromising on style or utility. Add a touch of elegance, fashion, and convenience to your look with the Aurora Handbag—the ultimate stylish women’s bag that blends fashion-forward aesthetics with practical design. Shop now and stand out with Denri’s signature designer handbag collection.",
+  "price": "1700.00",
+  "compare_at_price": "2100.00",
+  "tags": "on-offer",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.242Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 13,
+ "fields": {
+  "category": 1,
+  "name": "Denri Marley Handbag | Matching Mini Purse | Ergonomic Handles & Detachable Strap",
+  "slug": "marley-handbag",
+  "brand": "Denri Store",
+  "description": "Marley Handbag SIZE LENGTH 12', WIDTH 7', HEIGHT 8.2' FEATURES Exquisite handbag crafted from high-quality leather, offering unmatched durability and sophistication. Generous room for all your essentials, with cleverly designed pockets for effortless organization. Ergonomic handles and a detachable shoulder strap provide a comfortable and stylish carrying experience. Available in a wide range of chic designs and colors to match your unique style and preferences. Meticulous attention to detail and superior stitching ensure a handbag of enduring quality. The Marley Handbag is the ultimate accessory for anyone who appreciates style, sophistication, and functionality. Crafted from high-quality leather, this mini handbag is designed to exude both durability and elegance, making it perfect for a wide range of occasions, from casual outings to more formal events. Accompanied by a matching purse, this set offers the perfect combination of versatility and fashion. The Marley Handbag ensures you carry your essentials in style, with its compact yet spacious design providing ample room for your phone, wallet, keys, and makeup essentials. Whether you're looking for a chic handbag for everyday wear or a refined accessory to complement your evening attire, the Marley Handbag is a timeless addition to your wardrobe. The carefully designed interior includes cleverly organized pockets, allowing you to keep your items easily accessible while maintaining a neat and tidy interior. The ergonomic handles and detachable shoulder strap add an extra layer of comfort, making it suitable for both hand-held and shoulder wear. Made with meticulous attention to detail, the Marley Handbag boasts superior stitching and craftsmanship, ensuring long-lasting quality and a handbag that will remain in excellent condition for years to come. Available in a variety of chic designs and colors, this leather handbag is the perfect choice for those who want a stylish yet functional piece to elevate their look. Whether you're on the go, running errands, or heading out for an evening event, the Marley Handbag is designed to complement your busy lifestyle without compromising on style.",
+  "price": "2400.00",
+  "compare_at_price": null,
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.256Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 14,
+ "fields": {
+  "category": 1,
+  "name": "Denri Ladona Handbag | Compact Sling bag | Textured Leather, Twist-Lock & Chain Sling",
+  "slug": "ladona",
+  "brand": "Denri Store",
+  "description": "Ladona Handbag SIZE LENGTH 8.2', WIDTH 3.5', HEIGHT 8.4' FEATURES Crafted from high-quality leather, our handbags are the epitome of sophistication and durability. Available in a variety of chic designs and colors to complement your personal style. Achieve a high-end look without a high-end price tag. Luxury meets affordability. The ultimate accessory for daily life, from the office to evenings on the town. Introducing the Ladona Handbag, the perfect small handbag for stylish women in Kenya and beyond. Crafted from high-quality leather, this luxury handbag features a sophisticated textured pattern that combines durability, elegance, and modern style. The Ladona Handbag comes with a secure twist lock and a sleek chain sling strap, making it both a practical handbag and a fashionable accessory for any occasion. Its compact size — measuring 8.2 inches in length, 3.5 inches in width, and 8.4 inches in height — offers the perfect balance between functionality and fashion, easily carrying your daily essentials like your phone, wallet, makeup, and keys. Whether you're heading to a brunch with friends, a casual office meeting, or a night out on the town, the Ladona small handbag ensures you look effortlessly chic. Available in a variety of trendy colors and modern designs, this affordable luxury handbag allows you to achieve a high-end look without the premium price tag. Designed for versatility, it serves as the ideal daily handbag, evening bag, or party purse, seamlessly fitting into any wardrobe. Elevate your accessory game with the Ladona Handbag — where style, practicality, and affordable luxury meet.",
+  "price": "2100.00",
+  "compare_at_price": null,
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.265Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 15,
+ "fields": {
+  "category": 1,
+  "name": "Denri Mini Maya handbag | Spacious interior, Well-organized pockets, Secure zippers",
+  "slug": "mini-maya-bag",
+  "brand": "Denri Store",
+  "description": "Mini Maya Handbag Add a touch of sophistication to your ensemble with our chic woven purse featuring a charming chain strap adorned with charms. Crafted with meticulous attention to detail, this purse exudes elegance and versatility. The woven handle adds a unique texture, while the chain strap with charms offers a playful and fashionable twist. Perfect for both casual outings and special occasions, this purse is sure to make a statement wherever you go. Explore our collection today and elevate your look with Mini Maya Handbag. SIZE LENGTH 9.5', WIDTH 2', HEIGHT 4.5' FEATURES Crafted from high-quality leather materials for a timeless look and enduring durability. A chic accessory designed to complement your style for any occasion, from work to evenings out. Spacious interior with well-organized pockets for effortless organization of your essentials. Secure zippers and elegant closures that keep your belongings safe in style. Available in a range of sophisticated colors to reflect your personal chic style. From formal occasions to everyday elegance, our classy chic handbags complete your look.",
+  "price": "1600.00",
+  "compare_at_price": null,
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.276Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 16,
+ "fields": {
+  "category": 1,
+  "name": "Denri Cleo Handbag | Crossbody Shoulder Bag | Internal & External Pockets, Adjustable Strap",
+  "slug": "cleo-handbag",
+  "brand": "Denri Store",
+  "description": "Cleo Handbag Elevate your everyday style with our Crossbody Shoulder Handbag. Designed for comfort and convenience, this chic accessory offers the Perfect Blend of fashion and functionality. Whether you're running errands or meeting friends for Lunch, our handbag keeps your essentials close at hand and your hands free. Crafted from High-Quality materials and featuring thoughtful details, It's the Perfect addition to your Wardrobe. Shop Now and Experience Effortless Style with Our Crossbody Shoulder Handbag. SIZE LENGTH 11', WEIGHT 3', HEIGHT 9' FEATURES 1 internal pocket. 1 external pocket. Sturdy handle. Adjustable straps.",
+  "price": "2100.00",
+  "compare_at_price": null,
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.281Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 17,
+ "fields": {
+  "category": 1,
+  "name": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "slug": "untitled-jul4_09-04",
+  "brand": "Denri",
+  "description": "The Mandy Handbag is a compact yet surprisingly spacious handbag designed for the modern woman who values both style and practicality. With 4 interior compartments , a secure zippered main opening , and an adjustable handle , this bag keeps your essentials organized while maintaining a sleek, minimalist profile. Perfect for daily commutes, work, or casual outings, the Mandy Handbag ensures you carry everything you need—without the bulk. 2. Product Specifications Colors Available: • Black • Grey • Red • Dark Brown • Spice • Cracked Dimensions &amp; Weight: • Length: 23 cm (9 inches) • Width: 11 cm (4.3 inches) • Height: 14 cm (5.5 inches) • Estimated Weight: 0.5 kg (lightweight yet structured) Key Features: ✔ 4 Interior Compartments – Smartly organized for easy access to essentials. ✔ Secure Zippered Main Opening – Keeps belongings safe while on the go. ✔ Additional Storage: • 1 Zippered Interior Pocket (for valuables like cards or cash) • 3 Sleeved Pockets (for phones, pens, or makeup) ✔ Adjustable Handle – Wear it as a shoulder bag or carry it by hand. ✔ Premium Material – Made from high-quality, durable vegan leather. ✔ Compact Yet Roomy – Fits essentials without looking bulky. Cleaning &amp; Care: • Spot clean with a damp cloth and mild soap. • Air dry – Avoid direct sunlight to prevent fading. • Store upright with minimal stuffing to maintain shape. 3. Marketing Pitch \"Small Bag, Big Space – The Mandy Handbag Keeps You Organized in Style!\" Looking for a handbag that’s compact but surprisingly spacious ? The Mandy Handbag is your perfect match! Designed for women who hate clutter but need functionality, this bag combines smart storage with effortless elegance . ✨ Why You’ll Love the Mandy Handbag: ✅ 4 Interior Pockets – No more digging for keys, phones, or lipstick! ✅ Secure &amp; Stylish – Zippered main compartment keeps everything safe. ✅ Adjustable Handle – Carry it as a shoulder bag or handheld clutch. ✅ 6 Chic Colors – From classic Black to bold Red , find your perfect shade. ✅ Lightweight &amp; Durable – Vegan leather that lasts, without the weight. Perfect For: • Work &amp; Office – Fits your wallet, phone, and small notebook. • Daily Errands – Compact enough for quick trips, roomy enough for essentials. • Casual Outings – Elevates any outfit with its sleek design. Stay Organized. Stay Stylish. Get the Mandy Handbag Today! 👉 Available Now for Just 1,500 KSH! 5. Who Should Buy This? ✔ Professionals – Keeps work essentials neatly organized. ✔ Students – Compact enough for campus, spacious enough for daily needs. ✔ Minimalists – No bulk, just smart storage. ✔ Fashion Lovers – A sleek accessory that complements any outfit. Upgrade your everyday carry with the Mandy Handbag—where small size meets big functionality! 👜✨",
+  "price": "1500.00",
+  "compare_at_price": "1500.00",
+  "tags": "full-price",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.286Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 18,
+ "fields": {
+  "category": 1,
+  "name": "Denri Karina Handbag | Mini Structured bag | Ergonomic Handles & Adjustable Strap",
+  "slug": "karina-handbag-copy",
+  "brand": "Denri Store",
+  "description": "Karina Handbag Experience premium fashion with the Karina Handbag, a mini purse crafted from high-quality material that speaks volumes of style and luxury. Designed for the modern woman in Kenya and beyond, this elegant handbag combines compact functionality with timeless sophistication. The Karina mini handbag is the ultimate statement piece—perfect for formal events, stylish brunches, business meetings, and everyday outings where fashion meets function. With a structured silhouette and luxurious finish, this ladies' handbag captures the essence of high-end design. Its ergonomic handles and adjustable shoulder strap ensure comfort and flexibility, allowing you to carry it as a handbag, crossbody bag, or shoulder purse. Measuring 9.3 inches in length, 4 inches in width, and 7 inches in height, the Karina is perfectly sized to hold your essentials like your phone, makeup, wallet, and keys—without sacrificing its sleek aesthetic. The secure zippered closure keeps your valuables safe while the interior compartments provide organized space for your items. Available in a range of trendy colors and finishes, the Karina handbag complements a wide variety of outfits, whether you're dressing up for a soirée or heading to a casual weekend outing. Durable stitching and top-quality craftsmanship ensure long-lasting wear, making it an ideal choice for those who value both fashion and reliability. Elevate your accessory game with the Karina mini handbag purse—a compact, durable, and stylish addition to any modern woman’s wardrobe. Perfect for gift giving, fashion-forward looks, and daily elegance. SIZE LENGTH 9.3', WIDTH 4', HEIGHT 7' FEATURES Ergonomically designed handles and adjustable straps ensure comfort during every use. Confidence in your belongings' safety with secure zipper closures. A versatile accessory for your everyday life, from business meetings to casual outings. Available in a variety of trendy designs and colors, our handbags match your personal style. Impeccable craftsmanship and durable stitching result in a handbag built to last.",
+  "price": "2500.00",
+  "compare_at_price": "2500.00",
+  "tags": "full-price, Karina Handbag",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.321Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 19,
+ "fields": {
+  "category": 1,
+  "name": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "slug": "cess-large-work-tote-bag-for-women-fits-17-3-laptop-stanley-cup-pocket",
+  "brand": "Denri",
+  "description": "Cess 17-Inch Laptop Tote Bag for Women with Stanley Cup Pocket Organized. Equipped. Effortlessly Stylish. Designed for women who carry more and expect their bag to keep up - the Cess Tote Bag blends elegant design with serious functionality. From long workdays to busy commutes and travel, this spacious tote keeps your laptop, tumbler, and daily essentials secure, organized, and easy to access. Why You’ll Love It Fits Large Laptops with Ease A fully padded, independent laptop compartment safely fits laptops up to 17.3 inches , along with tablets and documents — no squeezing, no compromise. Built-In Stanley Cup Pocket An interior elastic pocket is specially designed to hold large tumblers, including the 40oz Stanley Cup , keeping spills contained and your tote bag balanced. Exceptional Organization A spacious main compartment pairs with an internal organizer panel featuring pen slots, small pockets, and side compartments for chargers, power banks, and essentials. Discreet Security Pockets Front discreet pocket for quick-access items like your phone or keys Rear hidden anti-theft pocket to protect valuables such as wallets or passports Includes a Detachable Sling Bag A versatile mini sling lets you separate small items or head out light when you don’t need the full tote. Designed for Comfort &amp; Versatility Adjustable, removable padded shoulder strap for shoulder or crossbody carry Reinforced top handles for a polished hand-carry or forearm look Lightweight design with balanced weight distribution Easily transitions from tote → work bag → travel companion Durable, Protective &amp; Made to Last Water-resistant cross-pattern PU leather exterior Reinforced stitching and durable hardware Protective bottom feet to prevent wear and maintain structure Scratch-resistant finish for everyday durability Dimensions Length: 17.1 in Height: 12.99 in Width: 5.5 in Available Colors Emerald Green (Limited Edition with Red Lining) Black (Limited Edition with Red Lining) Cracked Spice Grey Perfect For Professional women carrying large laptops Commuters and business travelers Students, teachers, and academics Anyone looking for a stylish, high-capacity, multifunctional tote The Cess Tote Bag Where generous space meets elegant design—built for days that demand more from your bag.",
+  "price": "3500.00",
+  "compare_at_price": null,
+  "tags": "Bags in kenya, Bags in mombasa, Bags in Nairobi, College Handbag in Kenya, College Handbag in Nairobi, Designer Handbags, full-price, handbags for women, leather",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.328Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 20,
+ "fields": {
+  "category": 1,
+  "name": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "slug": "denri-amora-cute-mini-handbag-for-women-stylish-valentine-gift-date-night-brunch-outfit-ladies-bag-free-gift-bag-included",
+  "brand": "Denri",
+  "description": "Amora Top Handle Long Vanity Case with Chain Elegant Mini Handbag for Women | Valentine Gift, Date Night &amp; Brunch Bag The Amora Top Handle Vanity Case is a sleek, structured mini ladies handbag designed for modern women who want compact luxury without compromising functionality. Whether you’re heading to brunch, a date night, a wedding, or simply elevating your everyday outfit, Amora delivers polished sophistication in a lightweight silhouette. Crafted from smooth textured leather with refined light gold or silver hardware, this compact carryall transitions seamlessly from day to evening. Why Women Love the Amora Handbag ✔ Elegant structured silhouette ✔ Convertible top handle &amp; chain crossbody ✔ Lightweight and easy to carry ✔ Secure zip-around closure ✔ Perfect Valentine gift for her ✔ Free gift bag included Product Details Dimensions: 7.5” W × 5” H × 1.8” D Material: Smooth textured leather Lining: Black polyester interior Closure: Zip-around top closure Straps: • Rolled top handle (1.7” drop) • Detachable adjustable chain strap (22.5” drop) Available Colours: Black, Maroon, Purple, Mustard, Pink, Red, Olive Green, Blue Designed for Real Life Despite its slim profile, Amora comfortably fits your: • Phone • Cards • Keys • Lipstick • Small essentials It’s compact, organised, and structured — ideal for women who prefer a clean, lightweight bag that still makes a statement. Perfect For • Valentine’s Day gifts • Date night outfits • Brunch styling • Wedding guest looks • Birthday gifts for women • Girls’ night out • Travel and everyday errands This is the kind of handbag women search for when they want something cute, elegant, and easy to style with any outfit . Care Instructions • Wipe clean with a soft dry cloth • Use foam cleaner for stains • Store in a dust bag to maintain structure",
+  "price": "2100.00",
+  "compare_at_price": null,
+  "tags": "ineligible-for-offers",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.361Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 21,
+ "fields": {
+  "category": 1,
+  "name": "Denri Imani Handbag | Secure Zip Closure, Laptop-Friendly & Versatile Carry Options",
+  "slug": "denri-imani-handbag-secure-zip-closure-laptop-friendly-versatile-carry-options",
+  "brand": "Denri",
+  "description": "The Imani Handbag is a refined blend of elegance, functionality, and confidence designed for the modern woman on the move. Crafted with a structured yet soft silhouette, the Imani Handbag combines luxury design with practical everyday use. Its spacious interior comfortably fits a laptop up to 13 inches, making it an ideal companion for work, meetings, travel, and daily life. Thoughtful features such as a secure zipper closure, side stoppers that lock the mouth ends to maintain the bag’s shape, and a convenient back pocket for quick-access items ensure both elegance and functionality. Designed with dual carry options, including classic top handles and an adjustable shoulder strap, the Imani Handbag adapts effortlessly to different lifestyles and occasions.Available in black, red, brown, nude, and green, the bag offers versatile color choices that complement both professional and casual wardrobes.",
+  "price": "3000.00",
+  "compare_at_price": null,
+  "tags": "Bags in kenya, Designer Handbags, handbags for women, ineligible-for-offers, sling",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.410Z"
+ }
+},
+{
+ "model": "store.product",
+ "pk": 22,
+ "fields": {
+  "category": 1,
+  "name": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "slug": "denri-nala-tote-bag-dual-texture-suede-faux-leather-tote-gold-hardware-laptop-ready",
+  "brand": "Denri Africa",
+  "description": "Meet the Nala — the tote that speaks before you do. Bold colour. Dual texture. Gold finish. The Nala Tote Bag is designed for the woman who wants a premium-feeling bag that transitions effortlessly from office to outing — without compromising on style. The Nala's dual-texture exterior is entirely intentional: rich suede velvet meets smooth faux leather in a tactile combination that commands attention at every angle. Finished with premium gold hardware throughout — zippers, studs, and logo plate — it carries the aesthetic of a luxury designer piece at a fraction of the price.",
+  "price": "5000.00",
+  "compare_at_price": null,
+  "tags": "Bags in kenya, Bags in Nairobi, Designer Handbags, handbags for women, ineligible-for-offers",
+  "colors": "",
+  "stock": 50,
+  "is_active": true,
+  "created_at": "2026-10-03T08:36:53.424Z"
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 1,
+ "fields": {
+  "product": 1,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MiniZuriBlack1.webp?v=1782735646",
+  "image": "",
+  "alt": "Denri Mini Zuri Handbag | Detachable Adjustable Strap & Multiple Compartments",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 2,
+ "fields": {
+  "product": 1,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MiniZuriRed.webp?v=1782477873",
+  "image": "",
+  "alt": "Denri Mini Zuri Handbag | Detachable Adjustable Strap & Multiple Compartments",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 3,
+ "fields": {
+  "product": 1,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MiniZuriSpice_a48b22af-5c1f-4189-9a1e-faabc67af078.webp?v=1782736060",
+  "image": "",
+  "alt": "Denri Mini Zuri Handbag | Detachable Adjustable Strap & Multiple Compartments",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 4,
+ "fields": {
+  "product": 1,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_3932.jpg?v=1758400661",
+  "image": "",
+  "alt": "Denri Mini Zuri Handbag | Detachable Adjustable Strap & Multiple Compartments",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 5,
+ "fields": {
+  "product": 1,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_7029.jpg?v=1758400661",
+  "image": "",
+  "alt": "Denri Mini Zuri Handbag | Detachable Adjustable Strap & Multiple Compartments",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 6,
+ "fields": {
+  "product": 1,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_7022.jpg?v=1758400661",
+  "image": "",
+  "alt": "Denri Mini Zuri Handbag | Detachable Adjustable Strap & Multiple Compartments",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 7,
+ "fields": {
+  "product": 1,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/minizuridarkbrown_10d15b4d-18b4-4d3c-b237-0c7ec42c24e8.webp?v=1782736059",
+  "image": "",
+  "alt": "Denri Mini Zuri Handbag | Detachable Adjustable Strap & Multiple Compartments",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 8,
+ "fields": {
+  "product": 1,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/minizuricaramel.webp?v=1782736059",
+  "image": "",
+  "alt": "Denri Mini Zuri Handbag | Detachable Adjustable Strap & Multiple Compartments",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 9,
+ "fields": {
+  "product": 1,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_3313.jpg?v=1758400661",
+  "image": "",
+  "alt": "Denri Mini Zuri Handbag | Detachable Adjustable Strap & Multiple Compartments",
+  "position": 8,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 10,
+ "fields": {
+  "product": 2,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/ClaireHBBlack.webp?v=1782471236",
+  "image": "",
+  "alt": "Denri Claire | 3-in-1 Convertible Handbag | Fits up to 17″ Laptop, Water resistant",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 11,
+ "fields": {
+  "product": 2,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/ClaireHBGrey.webp?v=1782471236",
+  "image": "",
+  "alt": "Denri Claire | 3-in-1 Convertible Handbag | Fits up to 17″ Laptop, Water resistant",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 12,
+ "fields": {
+  "product": 2,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/ClaireHBCracked.webp?v=1782471237",
+  "image": "",
+  "alt": "Denri Claire | 3-in-1 Convertible Handbag | Fits up to 17″ Laptop, Water resistant",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 13,
+ "fields": {
+  "product": 3,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/LolaRed.webp?v=1782475950",
+  "image": "",
+  "alt": "Denri Lola Handbag | Internal pockets Tote | Fits up to 13\" Laptop",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 14,
+ "fields": {
+  "product": 3,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/LolaSpice.webp?v=1782475910",
+  "image": "",
+  "alt": "Denri Lola Handbag | Internal pockets Tote | Fits up to 13\" Laptop",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 15,
+ "fields": {
+  "product": 3,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/LolaCracked.webp?v=1782475950",
+  "image": "",
+  "alt": "Denri Lola Handbag | Internal pockets Tote | Fits up to 13\" Laptop",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 16,
+ "fields": {
+  "product": 3,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/LolaGrey.webp?v=1782475910",
+  "image": "",
+  "alt": "Denri Lola Handbag | Internal pockets Tote | Fits up to 13\" Laptop",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 17,
+ "fields": {
+  "product": 3,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/LolaBeige.webp?v=1782475950",
+  "image": "",
+  "alt": "Denri Lola Handbag | Internal pockets Tote | Fits up to 13\" Laptop",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 18,
+ "fields": {
+  "product": 3,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/TED-2534.jpg?v=1766260964",
+  "image": "",
+  "alt": "Denri Lola Handbag | Internal pockets Tote | Fits up to 13\" Laptop",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 19,
+ "fields": {
+  "product": 3,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A1012.jpg?v=1752816117",
+  "image": "",
+  "alt": "Denri Lola Handbag | Internal pockets Tote | Fits up to 13\" Laptop",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 20,
+ "fields": {
+  "product": 4,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/JamelaBlack.webp?v=1782474713",
+  "image": "",
+  "alt": "Denri Jamela Laptop Handbag | Padded laptop compartment; multi pockets | 3-in-1 carry.",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 21,
+ "fields": {
+  "product": 4,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/JamelaBeige.webp?v=1782474713",
+  "image": "",
+  "alt": "Denri Jamela Laptop Handbag | Padded laptop compartment; multi pockets | 3-in-1 carry.",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 22,
+ "fields": {
+  "product": 4,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/JamelaSpice.webp?v=1782474713",
+  "image": "",
+  "alt": "Denri Jamela Laptop Handbag | Padded laptop compartment; multi pockets | 3-in-1 carry.",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 23,
+ "fields": {
+  "product": 4,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/JamelaGrey.webp?v=1782474692",
+  "image": "",
+  "alt": "Denri Jamela Laptop Handbag | Padded laptop compartment; multi pockets | 3-in-1 carry.",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 24,
+ "fields": {
+  "product": 4,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/JamelaCracked.webp?v=1782474693",
+  "image": "",
+  "alt": "Denri Jamela Laptop Handbag | Padded laptop compartment; multi pockets | 3-in-1 carry.",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 25,
+ "fields": {
+  "product": 4,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_8153.jpg?v=1758400462",
+  "image": "",
+  "alt": "Denri Jamela Laptop Handbag | Padded laptop compartment; multi pockets | 3-in-1 carry.",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 26,
+ "fields": {
+  "product": 5,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/SkyeBlack_080b3815-5776-4b16-9731-e10b4e5034f4.webp?v=1782479126",
+  "image": "",
+  "alt": "Denri Skye Handbag | Vegan Leather, Hidden Press-Button Closure | Chic & Featherlight",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 27,
+ "fields": {
+  "product": 5,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/SkyeLilac_2a23d252-bd09-45e5-9363-c3ca228a74ce.webp?v=1782479126",
+  "image": "",
+  "alt": "Denri Skye Handbag | Vegan Leather, Hidden Press-Button Closure | Chic & Featherlight",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 28,
+ "fields": {
+  "product": 5,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/SkyeMaroon_e0a8531f-6461-420e-a834-2cf176e73016.webp?v=1782479127",
+  "image": "",
+  "alt": "Denri Skye Handbag | Vegan Leather, Hidden Press-Button Closure | Chic & Featherlight",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 29,
+ "fields": {
+  "product": 5,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DAN09570.jpg?v=1746447907",
+  "image": "",
+  "alt": "Denri Skye Handbag | Vegan Leather, Hidden Press-Button Closure | Chic & Featherlight",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 30,
+ "fields": {
+  "product": 5,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/skye_black_1.heic?v=1746447882",
+  "image": "",
+  "alt": "Denri Skye Handbag | Vegan Leather, Hidden Press-Button Closure | Chic & Featherlight",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 31,
+ "fields": {
+  "product": 5,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Skye_Black.webp?v=1782479112",
+  "image": "",
+  "alt": "Denri Skye Handbag | Vegan Leather, Hidden Press-Button Closure | Chic & Featherlight",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 32,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/ElyseBlack.webp?v=1783586128",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 33,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/ElyseBeige.webp?v=1783586154",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 34,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/ElyseSpice.webp?v=1783586189",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 35,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_0175.jpg?v=1766261489",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 36,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_0177.jpg?v=1766261489",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 37,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_7990.jpg?v=1766261489",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 38,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/elyse.jpg?v=1766261489",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 39,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/TED_9552.jpg?v=1766261489",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 40,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/E2.jpg?v=1766261489",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 8,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 41,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/E8.jpg?v=1766261489",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 9,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 42,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/ELYSE_D.B_3ce4e1bf-9ad7-41a2-a821-0807f1108af4.jpg?v=1766261489",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 10,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 43,
+ "fields": {
+  "product": 6,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/ElyseBeige2.webp?v=1783586513",
+  "image": "",
+  "alt": "Denri Elyse 3-in-1 Handbag | Spacious interior, Multi pocketed, Durable construction",
+  "position": 11,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 44,
+ "fields": {
+  "product": 7,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/SierraBeige.webp?v=1782478791",
+  "image": "",
+  "alt": "Denri Sierra Handbag | Kikapu-Style Tote | 4 Zipped Compartments, Metal Lock & Sling",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 45,
+ "fields": {
+  "product": 7,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/SierraCream.webp?v=1782478791",
+  "image": "",
+  "alt": "Denri Sierra Handbag | Kikapu-Style Tote | 4 Zipped Compartments, Metal Lock & Sling",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 46,
+ "fields": {
+  "product": 7,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/SierraBlack.webp?v=1782478791",
+  "image": "",
+  "alt": "Denri Sierra Handbag | Kikapu-Style Tote | 4 Zipped Compartments, Metal Lock & Sling",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 47,
+ "fields": {
+  "product": 7,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/SierraMaroon.webp?v=1782478791",
+  "image": "",
+  "alt": "Denri Sierra Handbag | Kikapu-Style Tote | 4 Zipped Compartments, Metal Lock & Sling",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 48,
+ "fields": {
+  "product": 7,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/107A0077.jpg?v=1746455072",
+  "image": "",
+  "alt": "Denri Sierra Handbag | Kikapu-Style Tote | 4 Zipped Compartments, Metal Lock & Sling",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 49,
+ "fields": {
+  "product": 7,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/107A0084.jpg?v=1746455072",
+  "image": "",
+  "alt": "Denri Sierra Handbag | Kikapu-Style Tote | 4 Zipped Compartments, Metal Lock & Sling",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 50,
+ "fields": {
+  "product": 7,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/107A9746.jpg?v=1746455072",
+  "image": "",
+  "alt": "Denri Sierra Handbag | Kikapu-Style Tote | 4 Zipped Compartments, Metal Lock & Sling",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 51,
+ "fields": {
+  "product": 7,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/107A9771_0a033435-f38d-428c-ab1f-7c274d193e38.jpg?v=1746455072",
+  "image": "",
+  "alt": "Denri Sierra Handbag | Kikapu-Style Tote | 4 Zipped Compartments, Metal Lock & Sling",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 52,
+ "fields": {
+  "product": 8,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MiniZuriBlack_3a8f5a91-26ff-41f3-9bf7-69bd85b02e00.webp?v=1782814046",
+  "image": "",
+  "alt": "Denri Zuri Handbag | Durable Lightweight Build, 2 Internal Pockets | Chic & Spacious",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 53,
+ "fields": {
+  "product": 8,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MiniZuriSpice_3a69f3a0-a46d-42a3-aac2-f49a8346a6c0.webp?v=1782814093",
+  "image": "",
+  "alt": "Denri Zuri Handbag | Durable Lightweight Build, 2 Internal Pockets | Chic & Spacious",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 54,
+ "fields": {
+  "product": 8,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MiniZuriBeige_625d6fe5-56d4-4fc2-ab4e-d46448d46daa.webp?v=1782814093",
+  "image": "",
+  "alt": "Denri Zuri Handbag | Durable Lightweight Build, 2 Internal Pockets | Chic & Spacious",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 55,
+ "fields": {
+  "product": 8,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_7013.jpg?v=1651316348",
+  "image": "",
+  "alt": "Denri Zuri Handbag | Durable Lightweight Build, 2 Internal Pockets | Chic & Spacious",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 56,
+ "fields": {
+  "product": 8,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_7004.jpg?v=1651316335",
+  "image": "",
+  "alt": "Denri Zuri Handbag | Durable Lightweight Build, 2 Internal Pockets | Chic & Spacious",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 57,
+ "fields": {
+  "product": 8,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/TED_5509.jpg?v=1666103393",
+  "image": "",
+  "alt": "Denri Zuri Handbag | Durable Lightweight Build, 2 Internal Pockets | Chic & Spacious",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 58,
+ "fields": {
+  "product": 8,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_7596.jpg?v=1678275428",
+  "image": "",
+  "alt": "Denri Zuri Handbag | Durable Lightweight Build, 2 Internal Pockets | Chic & Spacious",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 59,
+ "fields": {
+  "product": 8,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/TED_8001.jpg?v=1695969863",
+  "image": "",
+  "alt": "Denri Zuri Handbag | Durable Lightweight Build, 2 Internal Pockets | Chic & Spacious",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 60,
+ "fields": {
+  "product": 8,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_6983.jpg?v=1651316286",
+  "image": "",
+  "alt": "Denri Zuri Handbag | Durable Lightweight Build, 2 Internal Pockets | Chic & Spacious",
+  "position": 8,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 61,
+ "fields": {
+  "product": 8,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MiniZuriDarkBrown_0d729ab1-9d71-4758-9e97-0874cf0e7df8.webp?v=1782814046",
+  "image": "",
+  "alt": "Denri Zuri Handbag | Durable Lightweight Build, 2 Internal Pockets | Chic & Spacious",
+  "position": 9,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 62,
+ "fields": {
+  "product": 9,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CathyHandbagCracked.webp?v=1782470185",
+  "image": "",
+  "alt": "Denri Cathy Handbag | Tote-Shoulder Bag |  Vegan Leather with Ankara Fabric",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 63,
+ "fields": {
+  "product": 9,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CathyHandbagBlack.webp?v=1782470185",
+  "image": "",
+  "alt": "Denri Cathy Handbag | Tote-Shoulder Bag |  Vegan Leather with Ankara Fabric",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 64,
+ "fields": {
+  "product": 9,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CathyHandbagSpice.webp?v=1782470096",
+  "image": "",
+  "alt": "Denri Cathy Handbag | Tote-Shoulder Bag |  Vegan Leather with Ankara Fabric",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 65,
+ "fields": {
+  "product": 9,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CathyHandbagBeige.webp?v=1782470096",
+  "image": "",
+  "alt": "Denri Cathy Handbag | Tote-Shoulder Bag |  Vegan Leather with Ankara Fabric",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 66,
+ "fields": {
+  "product": 9,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CathyHandbagGrey.webp?v=1782470185",
+  "image": "",
+  "alt": "Denri Cathy Handbag | Tote-Shoulder Bag |  Vegan Leather with Ankara Fabric",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 67,
+ "fields": {
+  "product": 9,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/IMG_3208.heic?v=1758400847",
+  "image": "",
+  "alt": "Denri Cathy Handbag | Tote-Shoulder Bag |  Vegan Leather with Ankara Fabric",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 68,
+ "fields": {
+  "product": 9,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/IMG_3210.heic?v=1758400847",
+  "image": "",
+  "alt": "Denri Cathy Handbag | Tote-Shoulder Bag |  Vegan Leather with Ankara Fabric",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 69,
+ "fields": {
+  "product": 10,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/OvalHandbagBrown.webp?v=1782478616",
+  "image": "",
+  "alt": "Denri Oval Handbag | Lightweight, Firm Handle, 2 Internal Pockets, Quality Leather",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 70,
+ "fields": {
+  "product": 10,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/OvalHandbagBlack.webp?v=1782478616",
+  "image": "",
+  "alt": "Denri Oval Handbag | Lightweight, Firm Handle, 2 Internal Pockets, Quality Leather",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 71,
+ "fields": {
+  "product": 10,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/OvalHandbagGrey.webp?v=1782478640",
+  "image": "",
+  "alt": "Denri Oval Handbag | Lightweight, Firm Handle, 2 Internal Pockets, Quality Leather",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 72,
+ "fields": {
+  "product": 10,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/OvalHandbagBeige.webp?v=1782478616",
+  "image": "",
+  "alt": "Denri Oval Handbag | Lightweight, Firm Handle, 2 Internal Pockets, Quality Leather",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 73,
+ "fields": {
+  "product": 10,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_1352.jpg?v=1758400763",
+  "image": "",
+  "alt": "Denri Oval Handbag | Lightweight, Firm Handle, 2 Internal Pockets, Quality Leather",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 74,
+ "fields": {
+  "product": 10,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/oval_red_handbag.jpg?v=1758400763",
+  "image": "",
+  "alt": "Denri Oval Handbag | Lightweight, Firm Handle, 2 Internal Pockets, Quality Leather",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 75,
+ "fields": {
+  "product": 10,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/TED-0239.jpg?v=1758400763",
+  "image": "",
+  "alt": "Denri Oval Handbag | Lightweight, Firm Handle, 2 Internal Pockets, Quality Leather",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 76,
+ "fields": {
+  "product": 11,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CollegeHandbagBlack2.webp?v=1782472870",
+  "image": "",
+  "alt": "Denri College Handbag | Fits 14″ Laptop | Roomy with Zip Closure, Interior Pockets",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 77,
+ "fields": {
+  "product": 11,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CollegeHandbagBrown.webp?v=1782472870",
+  "image": "",
+  "alt": "Denri College Handbag | Fits 14″ Laptop | Roomy with Zip Closure, Interior Pockets",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 78,
+ "fields": {
+  "product": 11,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/college_handbag.jpg?v=1758400777",
+  "image": "",
+  "alt": "Denri College Handbag | Fits 14″ Laptop | Roomy with Zip Closure, Interior Pockets",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 79,
+ "fields": {
+  "product": 11,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/TED_5744.jpg?v=1758400777",
+  "image": "",
+  "alt": "Denri College Handbag | Fits 14″ Laptop | Roomy with Zip Closure, Interior Pockets",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 80,
+ "fields": {
+  "product": 11,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_2852.jpg?v=1758400777",
+  "image": "",
+  "alt": "Denri College Handbag | Fits 14″ Laptop | Roomy with Zip Closure, Interior Pockets",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 81,
+ "fields": {
+  "product": 11,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/TED_5743.jpg?v=1758400777",
+  "image": "",
+  "alt": "Denri College Handbag | Fits 14″ Laptop | Roomy with Zip Closure, Interior Pockets",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 82,
+ "fields": {
+  "product": 11,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_3190.jpg?v=1758400777",
+  "image": "",
+  "alt": "Denri College Handbag | Fits 14″ Laptop | Roomy with Zip Closure, Interior Pockets",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 83,
+ "fields": {
+  "product": 11,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/SAS_2446-1.jpg?v=1758400777",
+  "image": "",
+  "alt": "Denri College Handbag | Fits 14″ Laptop | Roomy with Zip Closure, Interior Pockets",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 84,
+ "fields": {
+  "product": 12,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/AuroraRed.webp?v=1782465191",
+  "image": "",
+  "alt": "Denri Aurora Handbag | Mini Shoulder & Sling bag | Hand-stitched Leather, Metal Lock Stitch",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 85,
+ "fields": {
+  "product": 12,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/AuroraSpice.webp?v=1782465210",
+  "image": "",
+  "alt": "Denri Aurora Handbag | Mini Shoulder & Sling bag | Hand-stitched Leather, Metal Lock Stitch",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 86,
+ "fields": {
+  "product": 12,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/AuroraBlack.webp?v=1782465191",
+  "image": "",
+  "alt": "Denri Aurora Handbag | Mini Shoulder & Sling bag | Hand-stitched Leather, Metal Lock Stitch",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 87,
+ "fields": {
+  "product": 12,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/AuroraCracked.webp?v=1782465210",
+  "image": "",
+  "alt": "Denri Aurora Handbag | Mini Shoulder & Sling bag | Hand-stitched Leather, Metal Lock Stitch",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 88,
+ "fields": {
+  "product": 12,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/AuroraBeige.webp?v=1782465191",
+  "image": "",
+  "alt": "Denri Aurora Handbag | Mini Shoulder & Sling bag | Hand-stitched Leather, Metal Lock Stitch",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 89,
+ "fields": {
+  "product": 12,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/AuroraCracked1.webp?v=1782465210",
+  "image": "",
+  "alt": "Denri Aurora Handbag | Mini Shoulder & Sling bag | Hand-stitched Leather, Metal Lock Stitch",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 90,
+ "fields": {
+  "product": 12,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/AuroraSpice1.webp?v=1782465210",
+  "image": "",
+  "alt": "Denri Aurora Handbag | Mini Shoulder & Sling bag | Hand-stitched Leather, Metal Lock Stitch",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 91,
+ "fields": {
+  "product": 12,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/AuroraRed1.webp?v=1782465210",
+  "image": "",
+  "alt": "Denri Aurora Handbag | Mini Shoulder & Sling bag | Hand-stitched Leather, Metal Lock Stitch",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 92,
+ "fields": {
+  "product": 12,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_7633.jpg?v=1758103348",
+  "image": "",
+  "alt": "Denri Aurora Handbag | Mini Shoulder & Sling bag | Hand-stitched Leather, Metal Lock Stitch",
+  "position": 8,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 93,
+ "fields": {
+  "product": 13,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_8569.jpg?v=1682875650",
+  "image": "",
+  "alt": "Denri Marley Handbag | Matching Mini Purse | Ergonomic Handles & Detachable Strap",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 94,
+ "fields": {
+  "product": 13,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_8609.jpg?v=1682875650",
+  "image": "",
+  "alt": "Denri Marley Handbag | Matching Mini Purse | Ergonomic Handles & Detachable Strap",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 95,
+ "fields": {
+  "product": 13,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_8612.jpg?v=1682875650",
+  "image": "",
+  "alt": "Denri Marley Handbag | Matching Mini Purse | Ergonomic Handles & Detachable Strap",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 96,
+ "fields": {
+  "product": 13,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_8591.jpg?v=1686220195",
+  "image": "",
+  "alt": "Denri Marley Handbag | Matching Mini Purse | Ergonomic Handles & Detachable Strap",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 97,
+ "fields": {
+  "product": 13,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_8599.jpg?v=1686220216",
+  "image": "",
+  "alt": "Denri Marley Handbag | Matching Mini Purse | Ergonomic Handles & Detachable Strap",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 98,
+ "fields": {
+  "product": 14,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_2508.jpg?v=1661524333",
+  "image": "",
+  "alt": "Denri Ladona Handbag | Compact Sling bag | Textured Leather, Twist-Lock & Chain Sling",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 99,
+ "fields": {
+  "product": 14,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_2515.jpg?v=1661524334",
+  "image": "",
+  "alt": "Denri Ladona Handbag | Compact Sling bag | Textured Leather, Twist-Lock & Chain Sling",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 100,
+ "fields": {
+  "product": 14,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_2520.jpg?v=1661524333",
+  "image": "",
+  "alt": "Denri Ladona Handbag | Compact Sling bag | Textured Leather, Twist-Lock & Chain Sling",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 101,
+ "fields": {
+  "product": 14,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_2537.jpg?v=1661524334",
+  "image": "",
+  "alt": "Denri Ladona Handbag | Compact Sling bag | Textured Leather, Twist-Lock & Chain Sling",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 102,
+ "fields": {
+  "product": 14,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_2525.jpg?v=1661524334",
+  "image": "",
+  "alt": "Denri Ladona Handbag | Compact Sling bag | Textured Leather, Twist-Lock & Chain Sling",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 103,
+ "fields": {
+  "product": 14,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_2542.jpg?v=1701248206",
+  "image": "",
+  "alt": "Denri Ladona Handbag | Compact Sling bag | Textured Leather, Twist-Lock & Chain Sling",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 104,
+ "fields": {
+  "product": 14,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_2547_1.jpg?v=1707552217",
+  "image": "",
+  "alt": "Denri Ladona Handbag | Compact Sling bag | Textured Leather, Twist-Lock & Chain Sling",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 105,
+ "fields": {
+  "product": 14,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_2532.jpg?v=1713422803",
+  "image": "",
+  "alt": "Denri Ladona Handbag | Compact Sling bag | Textured Leather, Twist-Lock & Chain Sling",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 106,
+ "fields": {
+  "product": 14,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/24.jpg?v=1732537056",
+  "image": "",
+  "alt": "Denri Ladona Handbag | Compact Sling bag | Textured Leather, Twist-Lock & Chain Sling",
+  "position": 8,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 107,
+ "fields": {
+  "product": 15,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_9978.jpg?v=1695636197",
+  "image": "",
+  "alt": "Denri Mini Maya handbag | Spacious interior, Well-organized pockets, Secure zippers",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 108,
+ "fields": {
+  "product": 15,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/products/DSC_0003.jpg?v=1695637918",
+  "image": "",
+  "alt": "Denri Mini Maya handbag | Spacious interior, Well-organized pockets, Secure zippers",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 109,
+ "fields": {
+  "product": 16,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_5480.jpg?v=1688385597",
+  "image": "",
+  "alt": "Denri Cleo Handbag | Crossbody Shoulder Bag | Internal & External Pockets, Adjustable Strap",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 110,
+ "fields": {
+  "product": 16,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC_5488_1_c953c37d-6367-4b56-964b-f95e1f697115.jpg?v=1727775458",
+  "image": "",
+  "alt": "Denri Cleo Handbag | Crossbody Shoulder Bag | Internal & External Pockets, Adjustable Strap",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 111,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7589.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 112,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7628.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 113,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7509.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 114,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7488.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 115,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7458.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 116,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7511.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 117,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7683.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 118,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7507.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 119,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7593.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 8,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 120,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7653.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 9,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 121,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7512.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 10,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 122,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7485.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 11,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 123,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7650.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 12,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 124,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7462.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 13,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 125,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7494.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 14,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 126,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7531.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 15,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 127,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7588.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 16,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 128,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7591.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 17,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 129,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7522.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 18,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 130,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7686.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 19,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 131,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7506.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 20,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 132,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7565.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 21,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 133,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7484.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 22,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 134,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7526.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 23,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 135,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7477.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 24,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 136,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7514.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 25,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 137,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7689.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 26,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 138,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7482.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 27,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 139,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7524.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 28,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 140,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7471.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 29,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 141,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7539.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 30,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 142,
+ "fields": {
+  "product": 17,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/003A7521.jpg?v=1751611254",
+  "image": "",
+  "alt": "Denri Mandy Handbag | Vegan Leather, 4 Interior Compartments, Adjustable Handle",
+  "position": 31,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 143,
+ "fields": {
+  "product": 18,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/GREYKARINA.jpg?v=1754474488",
+  "image": "",
+  "alt": "Denri Karina Handbag | Mini Structured bag | Ergonomic Handles & Adjustable Strap",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 144,
+ "fields": {
+  "product": 18,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/BEIGEKARINA.jpg?v=1754474487",
+  "image": "",
+  "alt": "Denri Karina Handbag | Mini Structured bag | Ergonomic Handles & Adjustable Strap",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 145,
+ "fields": {
+  "product": 18,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/BLACKKARINA.jpg?v=1754474487",
+  "image": "",
+  "alt": "Denri Karina Handbag | Mini Structured bag | Ergonomic Handles & Adjustable Strap",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 146,
+ "fields": {
+  "product": 18,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CARAMELKARINA.jpg?v=1754474487",
+  "image": "",
+  "alt": "Denri Karina Handbag | Mini Structured bag | Ergonomic Handles & Adjustable Strap",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 147,
+ "fields": {
+  "product": 18,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/SPICEKARINA.jpg?v=1754474457",
+  "image": "",
+  "alt": "Denri Karina Handbag | Mini Structured bag | Ergonomic Handles & Adjustable Strap",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 148,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CessBlack.webp?v=1782470509",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 149,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CessBeige.webp?v=1782470594",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 150,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CessGrey.webp?v=1782470596",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 151,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CessRed.webp?v=1782470594",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 152,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/CessCracked.webp?v=1782470596",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 153,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC00129.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 154,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC00036.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 155,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Cess_black_1.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 156,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC00131.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 8,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 157,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Cess_black_2.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 9,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 158,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Cess_cracked_4.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 10,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 159,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/cess_cracked_2.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 11,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 160,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/cess_spice_3.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 12,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 161,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Cess_spice_1.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 13,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 162,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/cess_spice_2.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 14,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 163,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Cess_grey_2.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 15,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 164,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Cess_grey_3.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 16,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 165,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Cess_grey_1.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 17,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 166,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC00269.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 18,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 167,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Cess_cracked_3.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 19,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 168,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC00278.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 20,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 169,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Cess_cracked_1.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 21,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 170,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC00267.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 22,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 171,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/cess_spice_4.jpg?v=1775826270",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 23,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 172,
+ "fields": {
+  "product": 19,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Cess_grey_4.jpg?v=1769156686",
+  "image": "",
+  "alt": "Cess Large Work Tote Bag for Women – Fits 17.3″ Laptop, Stanley Cup Pocket",
+  "position": 24,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 173,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/GREEN2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 174,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/LILAC2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 175,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MAROON3.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 176,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/PINK2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 177,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MUSTARD.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 178,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/RED.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 179,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/BLUE.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 180,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/GREEN3.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 181,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/GREEN.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 8,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 182,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/LILAC3.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 9,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 183,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/LILAC.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 10,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 184,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MAROON2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 11,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 185,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MAROON.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 12,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 186,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MUSTARD2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 13,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 187,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MUSTARD3.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 14,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 188,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/PINK.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 15,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 189,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/RED2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 16,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 190,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/AMORA_BLACK.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 17,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 191,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/BLACK_2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 18,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 192,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/BLUE_2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 19,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 193,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/BLUE_3.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 20,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 194,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/BLUE_4.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 21,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 195,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/BLUE_5.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 22,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 196,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/RED_2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 23,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 197,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MODELBLUE.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 24,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 198,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MODELGREEN1.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 25,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 199,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MODELMUSTARD3.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 26,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 200,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MODELPINK2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 27,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 201,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MODELMUSTARD1.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 28,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 202,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MODELMUSTARD2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 29,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 203,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MODELPINK.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 30,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 204,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/MODELBLUE2.jpg?v=1775828803",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 31,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 205,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/RED_3.jpg?v=1770790299",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 32,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 206,
+ "fields": {
+  "product": 20,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/RED_3d4efaa0-7043-46e9-a076-c83049becfae.jpg?v=1770790299",
+  "image": "",
+  "alt": "Denri Amora Cute Mini Handbag for Women – Stylish Valentine's Gift, Date Night & Brunch Outfit Ladies Bag (Free Gift Bag Included)",
+  "position": 33,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 207,
+ "fields": {
+  "product": 21,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/ImaniBlack018.webp?v=1782473626",
+  "image": "",
+  "alt": "Denri Imani Handbag | Secure Zip Closure, Laptop-Friendly & Versatile Carry Options",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 208,
+ "fields": {
+  "product": 21,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/ImaniMaroon018.webp?v=1782473624",
+  "image": "",
+  "alt": "Denri Imani Handbag | Secure Zip Closure, Laptop-Friendly & Versatile Carry Options",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 209,
+ "fields": {
+  "product": 21,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC07320copy.jpg?v=1773995148",
+  "image": "",
+  "alt": "Denri Imani Handbag | Secure Zip Closure, Laptop-Friendly & Versatile Carry Options",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 210,
+ "fields": {
+  "product": 21,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC07535copy.jpg?v=1773995328",
+  "image": "",
+  "alt": "Denri Imani Handbag | Secure Zip Closure, Laptop-Friendly & Versatile Carry Options",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 211,
+ "fields": {
+  "product": 21,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC07502copy.jpg?v=1773995334",
+  "image": "",
+  "alt": "Denri Imani Handbag | Secure Zip Closure, Laptop-Friendly & Versatile Carry Options",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 212,
+ "fields": {
+  "product": 21,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC07461copy.jpg?v=1773995326",
+  "image": "",
+  "alt": "Denri Imani Handbag | Secure Zip Closure, Laptop-Friendly & Versatile Carry Options",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 213,
+ "fields": {
+  "product": 21,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC07394copy.jpg?v=1773995333",
+  "image": "",
+  "alt": "Denri Imani Handbag | Secure Zip Closure, Laptop-Friendly & Versatile Carry Options",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 214,
+ "fields": {
+  "product": 21,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/DSC07431copy.jpg?v=1773995328",
+  "image": "",
+  "alt": "Denri Imani Handbag | Secure Zip Closure, Laptop-Friendly & Versatile Carry Options",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 215,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/1_f559bae4-c652-4e48-9f43-bfb21b0710de.png?v=1778124185",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 0,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 216,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/2_4aeb77a2-383f-4da8-9cd7-b4680d370cb0.png?v=1778124185",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 1,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 217,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/3_faf38143-7116-415d-ba81-d5e9d63320de.png?v=1778124184",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 2,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 218,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Untitled_design_c130998f-417c-4d48-9173-f1ff8f4e365b.png?v=1778152197",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 3,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 219,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/IMG_8397.jpg?v=1778159799",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 4,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 220,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/IMG_8398.jpg?v=1778159799",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 5,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 221,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/IMG_8402.jpg?v=1778159798",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 6,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 222,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/IMG_8404.jpg?v=1778159799",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 7,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 223,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Denri_Nala_Blue_1.jpg?v=1784083608",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 8,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 224,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Denri_Nala_Blue_2.jpg?v=1784083608",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 9,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 225,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Denri_Nala_Blue_3.jpg?v=1784083608",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 10,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 226,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Denri_Nala_Blue_4.jpg?v=1784083608",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 11,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.productimage",
+ "pk": 227,
+ "fields": {
+  "product": 22,
+  "src": "https://cdn.shopify.com/s/files/1/0312/5497/0499/files/Denri_Nala_Blue.jpg?v=1784083609",
+  "image": "",
+  "alt": "Denri | Nala Tote Bag | Dual-Texture Suede & Faux Leather Tote | Gold Hardware, Laptop-Ready",
+  "position": 12,
+  "bg_luma": null,
+  "band_ready": true
+ }
+},
+{
+ "model": "store.promo",
+ "pk": 1,
+ "fields": {
+  "code": "DENRI10",
+  "percent_off": 10,
+  "amount_off": null,
+  "is_active": true,
+  "expires_at": null
+ }
+}
+]

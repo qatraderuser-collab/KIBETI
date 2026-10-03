@@ -15,5 +15,10 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'kibetistore.settings')
 
 application = get_wsgi_application()
 
+if os.environ.get('VERCEL'):
+    from kibetistore.bootstrap import ensure_database_ready
+
+    ensure_database_ready()
+
 # Vercel's Python runtime looks for a module-level `app`.
 app = application
