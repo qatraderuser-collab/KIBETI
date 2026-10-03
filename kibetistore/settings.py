@@ -71,6 +71,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -171,8 +172,12 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
-# Vercel runs collectstatic into STATIC_ROOT at build time and serves it from its CDN.
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Vercel's Python runtime never runs collectstatic, so WhiteNoise serves straight from the
+# finders (static/ plus app static such as the admin) instead of a collected STATIC_ROOT.
+WHITENOISE_USE_FINDERS = True
+WHITENOISE_AUTOREFRESH = DEBUG
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
