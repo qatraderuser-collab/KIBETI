@@ -6,3 +6,7 @@ __pycache__/
 db.sqlite3
 media/
 _zipstage/
+.venv/
+staticfiles/
+.env*.local
+.vercel/

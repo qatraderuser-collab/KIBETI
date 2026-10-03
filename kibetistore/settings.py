@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 import mimetypes
 import os
+import urllib.parse
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -31,10 +32,29 @@ load_dotenv(BASE_DIR / ".env")
 # Read from the environment (set in .env); never hardcode or commit it.
 SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 
+ON_VERCEL = bool(os.environ.get("VERCEL"))
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DJANGO_DEBUG", "True") == "True"
+DEBUG = os.environ.get("DJANGO_DEBUG", "False" if ON_VERCEL else "True") == "True"
 
 ALLOWED_HOSTS = [h for h in os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(",") if h]
+if ON_VERCEL:
+    ALLOWED_HOSTS += [".vercel.app"]
+    ALLOWED_HOSTS += [
+        os.environ[k] for k in ("VERCEL_URL", "VERCEL_BRANCH_URL", "VERCEL_PROJECT_PRODUCTION_URL")
+        if os.environ.get(k)
+    ]
+
+CSRF_TRUSTED_ORIGINS = [f"https://{h.lstrip('.')}" if not h.startswith(".") else f"https://*{h}"
+                        for h in ALLOWED_HOSTS if h not in ("localhost", "127.0.0.1")]
+
+if ON_VERCEL:
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    SECURE_REFERRER_POLICY = "strict-origin-when-cross-origin"
+    SECURE_HSTS_SECONDS = 63072000
 
 
 # Application definition
@@ -84,12 +104,33 @@ WSGI_APPLICATION = 'kibetistore.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+# Vercel's filesystem is read-only and ephemeral, so SQLite only works locally. When the Supabase
+# integration's POSTGRES_URL is present, use it (it's the transaction pooler, which suits serverless).
+_database_url = os.environ.get("DATABASE_URL") or os.environ.get("POSTGRES_URL")
+if _database_url:
+    _db = urllib.parse.urlparse(_database_url)
+    _query = urllib.parse.parse_qs(_db.query)
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': _db.path.lstrip('/') or 'postgres',
+            'USER': urllib.parse.unquote(_db.username or ''),
+            'PASSWORD': urllib.parse.unquote(_db.password or ''),
+            'HOST': _db.hostname,
+            'PORT': _db.port or 5432,
+            'CONN_MAX_AGE': 0,
+            # Transaction-mode poolers (pgbouncer/Supavisor) don't support server-side cursors.
+            'DISABLE_SERVER_SIDE_CURSORS': True,
+            'OPTIONS': {'sslmode': _query.get('sslmode', ['require'])[0]},
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
@@ -129,6 +170,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [BASE_DIR / 'static']
+
+# Vercel runs collectstatic into STATIC_ROOT at build time and serves it from its CDN.
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
