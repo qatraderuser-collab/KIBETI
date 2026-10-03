@@ -735,3 +735,79 @@ img { max-width: 100%; display: block; }
   .buy-form { position: fixed; left: 0; right: 0; bottom: calc(56px + env(safe-area-inset-bottom)); z-index: 25; margin: 0; padding: 8px 12px; gap: 10px; background: var(--paper-raised); border-top: 1px solid var(--line); }
   .buy-form .btn-pill { flex: 1; }
 }
+
+/* ---------- Phone menu ----------
+   Below 601px the top nav used to be `display: none`, which left the collection filter panel as the only
+   route to a category on a phone. The same links now sit behind a menu button in the empty right-hand
+   space of the header's first row, so the two-row phone header stays exactly as approved. The panel is
+   absolutely positioned so it never grows the header — `--header-h`, which the hero offset depends on,
+   stays the closed-header height. It carries its own opaque background because on the home page the
+   header is transparent over the photo, and white-on-photo would be unreadable. */
+.nav-toggle { display: none; }
+.nav-icon-close { display: none; }
+@media (max-width: 600px) {
+  .nav-toggle {
+    flex: none;
+    order: 2;
+    margin-left: auto;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--paper-raised);
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .nav-toggle[aria-expanded="true"] .nav-icon-open { display: none; }
+  .nav-toggle[aria-expanded="true"] .nav-icon-close { display: block; }
+  .home-hero .nav-toggle { background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.28); color: #fff; }
+  .home-hero .site-header.scrolled .nav-toggle { background: var(--paper-raised); border-color: var(--line); color: var(--ink); }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    gap: 0;
+    padding: 6px 0 10px;
+    overflow: visible;
+    white-space: normal;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 16px 30px rgba(26, 24, 21, .16);
+  }
+  .main-nav.is-open { display: flex; }
+  .main-nav a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 18px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 0;
+  }
+  .main-nav a:hover { background: rgba(26, 24, 21, .05); border-color: transparent; }
+  .home-hero .main-nav a,
+  .home-hero .site-header.scrolled .main-nav a { color: var(--ink); text-shadow: none; }
+}
+
+/* Phone home: the header (logo, search, category chips) is a solid bar above the hero rather than
+   floating over the photo, so the search field never sits on the image. */
+@media (max-width: 600px) {
+  .home-hero .site-header { background: var(--paper); border-bottom: 1px solid var(--line); }
+  .home-hero main { margin-top: 0; }
+  .home-hero .logo { color: var(--ink); text-shadow: none; }
+  .home-hero .header-search { background: var(--paper-raised); border-color: var(--line); }
+  .home-hero .header-search .search-go { background: var(--ink); }
+}
+@media (max-width: 600px) {
+  .home-hero .nav-toggle { background: var(--paper-raised); border-color: var(--line); color: var(--ink); }
+}
+@media (max-width: 600px) {
+  /* The copy now sits on its own panel, so the photo scrim would only grey the text out. */
+  .hero--editorial::after { display: none; }
+}

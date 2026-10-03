@@ -12,7 +12,11 @@
   <header class="site-header">
     <div class="container header-row">
       <a class="logo" href="{% url 'home' %}">Zuri Luxee<span>.</span></a>
-      <nav class="main-nav">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">
+        <svg class="nav-icon-open" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+        <svg class="nav-icon-close" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></svg>
+      </button>
+      <nav class="main-nav" id="main-nav">
         <a href="{% url 'home' %}">Home</a>
         {% for c in nav_collections %}
           <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
