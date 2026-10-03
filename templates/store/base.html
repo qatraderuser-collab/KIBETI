@@ -17,7 +17,7 @@
         <svg class="nav-icon-close" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></svg>
       </button>
       <nav class="main-nav" id="main-nav">
-        <a href="{% url 'home' %}">Home</a>
+        <a class="nav-home" href="{% url 'home' %}">Home</a>
         {% for c in nav_collections %}
           <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
         {% endfor %}
@@ -38,7 +38,7 @@
           {% if user.is_authenticated %}
             <a href="{% url 'account' %}">My account</a>
             {% if user.is_staff %}<a href="{% url 'dashboard' %}">Dashboard</a>{% endif %}
-            <a href="{% url 'logout' %}" class="keep-mobile">Log out</a>
+            <a href="{% url 'logout' %}">Log out</a>
           {% else %}
             <a href="{% url 'login' %}">Log in</a>
             <a href="{% url 'register' %}">Sign up</a>

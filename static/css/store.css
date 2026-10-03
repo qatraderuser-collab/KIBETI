@@ -52,21 +52,15 @@ img { max-width: 100%; display: block; }
   .header-search:focus-within { width: 196px; }
 }
 @media (max-width: 600px) {
-  .main-nav { display: none; }
   /* Logo, search pill, auth icon and cart button cannot share 324px: the brand wrapped onto two
      lines (header 109px tall) and the search input collapsed to 11px wide. The actions move to their
-     own header row so the logo keeps one line and the field gets everything left of the icons. */
+     own header row so the logo keeps one line and the field gets everything left of the icons.
+     The nav panel and the hidden cart/auth links are handled in the phone shell at the end. */
   .header-row { gap: 10px; row-gap: 8px; flex-wrap: wrap; }
   .logo { flex: 0 0 auto; white-space: nowrap; }
-  .header-actions { gap: 8px; flex: 1 1 100%; min-width: 0; margin-left: 0; order: 3; }
+  .header-actions { gap: 8px; flex: 1 1 100%; min-width: 0; margin-left: 0; }
   .header-search { width: auto; flex: 1 1 auto; min-width: 0; max-width: none; padding-left: 9px; }
   .header-search:focus-within { width: auto; }
-  .auth-links { gap: 0; }
-  .auth-links a { padding: 7px 7px; }
-  .auth-links a:not(.auth-icon):not(.keep-mobile) { display: none; }
-  .auth-icon { display: grid; place-items: center; }
-  .cart-link { padding: 8px 11px; }
-  .cart-word { display: none; }
 }
 
 .btn-pill { display: inline-block; border: none; border-radius: 999px; padding: 11px 22px; font-size: 14px; font-weight: 600; text-decoration: none; cursor: pointer; transition: transform .12s ease, background .12s ease; }
@@ -337,10 +331,11 @@ img { max-width: 100%; display: block; }
   .stack-mobile .cart-item { flex: 1 1 auto; min-width: 0; }
 
   /* Fingers, not cursors. A second sweep at 390px still found thumbs aiming at 17-37px: Add to cart
-     32, account icon 30, cart pill 32, filter rows 32, "Clear" 20, account-form inputs 37, footer
-     links 19, breadcrumbs 17. min-height plus flex centring grows only the hit area, and only on
-     phones, so desktop keeps its tighter look. Inline text links grow with padding plus an equal
-     negative margin, which widens the target without moving the line. */
+     32, filter rows 32, "Clear" 20, account-form inputs 37, footer links 19, breadcrumbs 17.
+     min-height plus flex centring grows only the hit area, and only on phones, so desktop keeps its
+     tighter look. Inline text links grow with padding plus an equal negative margin, which widens
+     the target without moving the line. (The header account/cart links are hidden on phones — the
+     bottom tab bar is their 44px equivalent.) */
   .btn-pill, .link-remove {
     display: inline-flex;
     align-items: center;
@@ -351,8 +346,6 @@ img { max-width: 100%; display: block; }
   .form-grid input, .filter-side input[type="search"], .filter-side select { min-height: 44px; }
   .auth-form input:not([type="checkbox"]):not([type="radio"]) { min-height: 44px; }
   .filter-price input { min-height: 44px; }
-  .auth-icon { width: 44px; height: 44px; }
-  .cart-link { min-height: 44px; }
   .filter-links a, .filter-clear { display: inline-flex; align-items: center; min-height: 44px; }
   .site-footer ul { gap: 0; }
   .site-footer li a { display: inline-flex; align-items: center; min-height: 44px; }
@@ -370,7 +363,8 @@ img { max-width: 100%; display: block; }
   .filter-links { flex-direction: row; flex-wrap: wrap; gap: 6px; }
   .filter-links a { padding: 0 12px; border-radius: 999px; background: #fff; border: 1px solid var(--line); }
   .filter-links a.is-active { border-color: var(--ink); }
-  .shop-main .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 12px; }
+  /* 2-up itself is set once, in the phone shell; below 561px only the row gap loosens. */
+  .shop-main .product-grid { gap: 24px 12px; }
   /* 2-up leaves a 161px card, and price + an 113px "Add to cart" pill cannot share that row — the button
      hung 48px past the viewport. The foot stacks and the pill takes the width instead. */
   .card-foot { flex-direction: column; align-items: stretch; gap: 8px; }
@@ -683,21 +677,58 @@ img { max-width: 100%; display: block; }
 .footer-pay span { border: 1px solid rgba(240, 201, 138, .3); border-radius: 999px; padding: 5px 12px; font-size: 11px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: #f0c98a; }
 @media (max-width: 560px) { .footer-bottom { justify-content: flex-start; } }
 
-/* ---- Phone app-style shell (Jumia-like): bottom tab bar, category chip row, collapsible filters,
-   dense 2-up cards and a sticky buy bar. All of it is phone-only; desktop is untouched. ---- */
-.bottom-nav, .filter-toggle { display: none; }
+/* ---- Phone shell ---------------------------------------------------------------------
+   One navigation model below 601px: the header is logo + menu button on row 1 and the search
+   pill on row 2, the categories open from the menu button, and Home/Shop/Cart/Account live in a
+   fixed tab bar. The header cart/auth links and the inline category row are switched off here so
+   no route is offered twice. Everything above 600px keeps the desktop header. */
+.nav-toggle, .nav-icon-close, .bottom-nav, .filter-toggle { display: none; }
 @media (max-width: 600px) {
   body { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
   .announce { font-size: 12px; padding: 6px 10px; }
-
-  /* Header: logo + cart on one row would crowd; keep logo/search/actions, then a scrolling chip row. */
   .header-row { padding-top: 8px; padding-bottom: 8px; }
-  .main-nav { display: flex; order: 4; flex: 1 1 100%; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
-  .main-nav::-webkit-scrollbar { display: none; }
-  .main-nav a { flex: none; border: 1px solid var(--line); border-radius: 999px; background: #fff; padding: 6px 14px; font-size: 13px; font-weight: 600; }
-  .home-hero .main-nav a { color: var(--ink); text-shadow: none; }
   .auth-links, .cart-link { display: none; }
   .header-actions { order: 2; flex: 1 1 100%; }
+
+  .nav-toggle {
+    flex: none; order: 2; margin-left: auto;
+    width: 44px; height: 44px; display: grid; place-items: center;
+    border: 1px solid var(--line); border-radius: 999px;
+    background: var(--paper-raised); color: var(--ink); cursor: pointer;
+  }
+  .nav-toggle[aria-expanded="true"] .nav-icon-open { display: none; }
+  .nav-toggle[aria-expanded="true"] .nav-icon-close { display: block; }
+
+  /* The panel is absolutely positioned so opening it never grows the header — `--header-h`, which
+     the hero offset reads, stays the closed-header height. It carries its own opaque background
+     because the header is transparent over the photo on other pages. */
+  .main-nav {
+    display: none; position: absolute; left: 0; right: 0; top: 100%;
+    flex-direction: column; gap: 0; padding: 6px 0 10px;
+    overflow: visible; white-space: normal;
+    background: var(--paper); border-bottom: 1px solid var(--line);
+    box-shadow: 0 16px 30px rgba(26, 24, 21, .16);
+  }
+  .main-nav.is-open { display: flex; }
+  .main-nav a {
+    display: flex; align-items: center; min-height: 44px; padding: 0 18px;
+    font-size: 15px; font-weight: 600; color: var(--ink); text-shadow: none; border-bottom: 0;
+  }
+  .main-nav a:hover { background: rgba(26, 24, 21, .05); }
+  /* Home/Shop already sit in the tab bar, so the panel only lists collections and Offers. */
+  .main-nav a.nav-home { display: none; }
+
+  /* Phone home: the header is a solid bar above the hero instead of floating on the photo, so the
+     search field never sits on the image. */
+  .home-hero .site-header { background: var(--paper); border-bottom: 1px solid var(--line); }
+  .home-hero main { margin-top: 0; }
+  .home-hero .logo { color: var(--ink); text-shadow: none; }
+  .home-hero .header-search { background: var(--paper-raised); border-color: var(--line); }
+  .home-hero .header-search .search-go { background: var(--ink); }
+  .home-hero .main-nav a { color: var(--ink); text-shadow: none; }
+  .home-hero .main-nav a:hover { border-color: transparent; }
+  /* The copy now sits on its own panel, so the photo scrim would only grey the text out. */
+  .hero--editorial::after { display: none; }
 
   .bottom-nav {
     display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
@@ -710,12 +741,14 @@ img { max-width: 100%; display: block; }
   .bn-badge { position: absolute; top: -5px; right: -9px; background: var(--gold); color: #fff; border-radius: 999px; min-width: 17px; height: 17px; padding: 0 4px; font-size: 10px; line-height: 17px; text-align: center; }
   .bn-badge[hidden] { display: none; }
 
-  /* Filters tuck behind one button so products come first. */
+  /* Filters tuck behind one button so products come first. On home the same aside is only a static
+     copy of the collection links that the menu panel already lists, so it is dropped there. */
   .filter-side { position: static; padding: 0; border: 0; background: transparent; }
   .filter-side > h2 { display: none; }
   .filter-toggle { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; border: 1px solid var(--line); border-radius: 10px; background: #fff; font: 700 14px var(--sans); color: var(--ink); }
   .filter-side form { display: none; margin-top: 10px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper-raised); }
   .filter-side.is-open form { display: block; }
+  .home-hero .filter-side { display: none; }
 
   /* Denser product tiles. */
   .collection-wrap { padding: 18px 12px 32px; }
@@ -734,80 +767,4 @@ img { max-width: 100%; display: block; }
   .product-info h1 { font-size: 21px; }
   .buy-form { position: fixed; left: 0; right: 0; bottom: calc(56px + env(safe-area-inset-bottom)); z-index: 25; margin: 0; padding: 8px 12px; gap: 10px; background: var(--paper-raised); border-top: 1px solid var(--line); }
   .buy-form .btn-pill { flex: 1; }
-}
-
-/* ---------- Phone menu ----------
-   Below 601px the top nav used to be `display: none`, which left the collection filter panel as the only
-   route to a category on a phone. The same links now sit behind a menu button in the empty right-hand
-   space of the header's first row, so the two-row phone header stays exactly as approved. The panel is
-   absolutely positioned so it never grows the header — `--header-h`, which the hero offset depends on,
-   stays the closed-header height. It carries its own opaque background because on the home page the
-   header is transparent over the photo, and white-on-photo would be unreadable. */
-.nav-toggle { display: none; }
-.nav-icon-close { display: none; }
-@media (max-width: 600px) {
-  .nav-toggle {
-    flex: none;
-    order: 2;
-    margin-left: auto;
-    width: 44px;
-    height: 44px;
-    display: grid;
-    place-items: center;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    background: var(--paper-raised);
-    color: var(--ink);
-    cursor: pointer;
-  }
-  .nav-toggle[aria-expanded="true"] .nav-icon-open { display: none; }
-  .nav-toggle[aria-expanded="true"] .nav-icon-close { display: block; }
-  .home-hero .nav-toggle { background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.28); color: #fff; }
-  .home-hero .site-header.scrolled .nav-toggle { background: var(--paper-raised); border-color: var(--line); color: var(--ink); }
-
-  .main-nav {
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    flex-direction: column;
-    gap: 0;
-    padding: 6px 0 10px;
-    overflow: visible;
-    white-space: normal;
-    background: var(--paper);
-    border-bottom: 1px solid var(--line);
-    box-shadow: 0 16px 30px rgba(26, 24, 21, .16);
-  }
-  .main-nav.is-open { display: flex; }
-  .main-nav a {
-    display: flex;
-    align-items: center;
-    min-height: 44px;
-    padding: 0 18px;
-    font-size: 15px;
-    font-weight: 600;
-    border-bottom: 0;
-  }
-  .main-nav a:hover { background: rgba(26, 24, 21, .05); border-color: transparent; }
-  .home-hero .main-nav a,
-  .home-hero .site-header.scrolled .main-nav a { color: var(--ink); text-shadow: none; }
-}
-
-/* Phone home: the header (logo, search, category chips) is a solid bar above the hero rather than
-   floating over the photo, so the search field never sits on the image. */
-@media (max-width: 600px) {
-  .home-hero .site-header { background: var(--paper); border-bottom: 1px solid var(--line); }
-  .home-hero main { margin-top: 0; }
-  .home-hero .logo { color: var(--ink); text-shadow: none; }
-  .home-hero .header-search { background: var(--paper-raised); border-color: var(--line); }
-  .home-hero .header-search .search-go { background: var(--ink); }
-}
-@media (max-width: 600px) {
-  .home-hero .nav-toggle { background: var(--paper-raised); border-color: var(--line); color: var(--ink); }
-}
-@media (max-width: 600px) {
-  /* The copy now sits on its own panel, so the photo scrim would only grey the text out. */
-  .hero--editorial::after { display: none; }
 }
