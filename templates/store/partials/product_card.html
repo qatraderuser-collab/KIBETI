@@ -1,0 +1,46 @@
+{% load store_extras %}
+<div class="product-card">
+  <a class="card-media" href="{{ product.get_absolute_url }}">
+    {% if product.on_sale %}<span class="badge">-{{ product.discount_percent }}%</span>{% endif %}
+    {% if product.stock <= 0 %}<span class="badge badge-sold">Sold out</span>{% endif %}
+    {% with img=product.primary_image %}
+      {% if img %}<img src="{{ img.url }}" alt="{{ img.alt }}" loading="lazy">{% else %}<span class="no-img">No image</span>{% endif %}
+    {% endwith %}
+  </a>
+  <div class="card-body">
+    {% with swatches=product.colors|color_swatches %}
+      {% if swatches %}
+        <div class="card-swatches" aria-label="Available colours">
+          {% for s in swatches %}
+            {% if s.more %}
+              <span class="swatch-more">+{{ s.more }}</span>
+            {% else %}
+              <span class="swatch" style="--sw: {{ s.hex }}" title="{{ s.name }}"></span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+    <a class="card-title" href="{{ product.get_absolute_url }}">{{ product.name }}</a>
+    {% if product.stock > 0 %}
+      <span class="card-flag">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h10.5v9.5H2.5z"/><path d="M13 9.5h4.3l3.2 3v3.5H13z"/><circle cx="6.8" cy="18" r="1.8"/><circle cx="16.9" cy="18" r="1.8"/></svg>
+        Same-day dispatch
+      </span>
+    {% endif %}
+    <div class="card-foot">
+      <span class="card-price">
+        <span class="price">{{ product.price|money_short }}</span>
+        {% if product.on_sale %}<span class="compare">{{ product.compare_at_price|money_short }}</span>{% endif %}
+      </span>
+      <form action="{% url 'cart_add' %}" method="post" class="card-add js-add-cart">
+        {% csrf_token %}
+        <input type="hidden" name="product_id" value="{{ product.id }}">
+        <input type="hidden" name="next" value="{{ request.path }}">
+        <button type="submit" class="btn-pill btn-dark" {% if product.stock <= 0 %}disabled{% endif %}>
+          {% if product.stock <= 0 %}Sold out{% else %}Add to cart{% endif %}
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

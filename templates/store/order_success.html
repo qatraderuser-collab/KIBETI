@@ -1,0 +1,28 @@
+{% extends "store/base.html" %}
+{% load store_extras %}
+
+{% block title %}{{ order.reference }} — Zuri Luxee{% endblock %}
+
+{% block content %}
+<div class="container success-wrap">
+  <h1>Asante, {{ order.full_name }}!</h1>
+  <p>Order <strong>{{ order.reference }}</strong> placed — total <strong>{{ order.total|money }}</strong>{% if order.discount %} ({{ order.promo_code }} saved you {{ order.discount|money }}){% endif %}.</p>
+  <p class="pay-chip {% if order.payment_status == 'paid' %}chip-paid{% else %}chip-pending{% endif %}">
+    {% if order.payment_status == 'paid' %}✔ Paid via M-Pesa {{ order.mpesa_reference }}
+    {% elif order.payment_status == 'cod' %}💵 Cash on delivery — we'll call {{ order.phone }} to arrange
+    {% else %}⏳ Awaiting M-Pesa payment — <a href="{% url 'order_payment' order.reference %}">pay now</a>
+    {% endif %}
+  </p>
+  <p>Delivery to <strong>{{ order.address }}, {{ order.city }}</strong>. We will WhatsApp you tracking updates.</p>
+  <table class="cart-table stack-mobile">
+    <thead><tr><th>Item</th><th>Qty</th><th>Total</th></tr></thead>
+    <tbody>
+      {% for line in order.items.all %}
+      <tr><td>{{ line.product_name }}</td><td data-label="Qty">{{ line.quantity }}</td><td data-label="Total">{{ line.price|money_short }} × {{ line.quantity }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <a href="{% url 'order_receipt' order.reference %}" class="btn-pill btn-gold">View receipt (QR)</a>
+  <a href="{% url 'collection' 'handbags' %}" class="btn-pill btn-dark">Continue shopping</a>
+</div>
+{% endblock %}

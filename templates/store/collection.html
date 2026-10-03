@@ -1,0 +1,77 @@
+{% extends "store/base.html" %}
+{% load store_extras %}
+
+{% block title %}{{ category.name|default:"All handbags" }} — Zuri Luxee{% endblock %}
+
+{% block content %}
+<div class="container collection-wrap">
+  <div class="collection-head">
+    <h1>{{ category.name|default:"All handbags" }}</h1>
+    <p class="count">{{ total }} product{{ total|pluralize }} · showing {{ shown }}</p>
+  </div>
+
+  <div class="shop-layout">
+    <aside class="filter-side">
+      <h2>Filter</h2>
+      <form method="get" action="">
+        <div class="filter-group">
+          <input type="search" name="q" value="{{ q }}" placeholder="Search bags…">
+        </div>
+
+        <div class="filter-group">
+          <span>Collection</span>
+          <div class="filter-links">
+            <a href="{% url 'collection_all' %}" class="{% if not category %}is-active{% endif %}">All bags</a>
+            {% for c in collections %}
+              <a href="{% url 'collection' c.slug %}" class="{% if category.slug == c.slug %}is-active{% endif %}">{{ c.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span>Price (KSh)</span>
+          <div class="filter-price">
+            <input type="number" name="min" value="{{ bounds.min }}" min="0" step="100" placeholder="{% if price_floor %}{{ price_floor|money_short }}{% else %}Min{% endif %}" aria-label="Minimum price">
+            <input type="number" name="max" value="{{ bounds.max }}" min="0" step="100" placeholder="Max" aria-label="Maximum price">
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span>Options</span>
+          <label><input type="checkbox" name="sale" value="1" {% if sale == '1' %}checked{% endif %}> On offer</label>
+          <label><input type="checkbox" name="instock" value="1" {% if instock == '1' %}checked{% endif %}> In stock</label>
+        </div>
+
+        <div class="filter-group">
+          <span>Sort</span>
+          <select name="sort">
+            <option value="featured" {% if sort == 'featured' %}selected{% endif %}>Featured</option>
+            <option value="price-asc" {% if sort == 'price-asc' %}selected{% endif %}>Price, low to high</option>
+            <option value="price-desc" {% if sort == 'price-desc' %}selected{% endif %}>Price, high to low</option>
+            <option value="name" {% if sort == 'name' %}selected{% endif %}>Alphabetical</option>
+          </select>
+        </div>
+
+        <div class="filter-actions">
+          <button type="submit" class="btn-pill btn-dark btn-sm">Apply</button>
+          <a class="filter-clear" href="{{ request.path }}">Clear</a>
+        </div>
+      </form>
+    </aside>
+
+    <div class="shop-main">
+      {% if page_obj.object_list %}
+      <div class="product-grid">
+        {% for product in page_obj.object_list %}
+          {% include "store/partials/product_card.html" %}
+        {% endfor %}
+      </div>
+      {% else %}
+      <p class="empty">No products match your filters.</p>
+      {% endif %}
+
+      {% include "store/partials/pagination.html" %}
+    </div>
+  </div>
+</div>
+{% endblock %}

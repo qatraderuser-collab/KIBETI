@@ -1,0 +1,17 @@
+{% extends "store/base.html" %}
+
+{% block title %}Log in — Zuri Luxee{% endblock %}
+
+{% block content %}
+<div class="container auth-wrap">
+  <h1>Welcome back</h1>
+  <form method="post" class="auth-form">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <label>Username {{ form.username }}</label>
+    <label>Password {{ form.password }}</label>
+    <button type="submit" class="btn-pill btn-dark btn-block">Log in</button>
+  </form>
+  <p class="auth-alt">New here? <a href="{% url 'register' %}">Create an account</a></p>
+</div>
+{% endblock %}

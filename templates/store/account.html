@@ -1,0 +1,36 @@
+{% extends "store/base.html" %}
+{% load store_extras %}
+
+{% block title %}My account — Zuri Luxee{% endblock %}
+
+{% block content %}
+<div class="container account-wrap">
+  <h1>Hello, {{ user.username }}</h1>
+  <h2>Order history</h2>
+  {% if orders %}
+  <table class="cart-table stack-mobile">
+    <thead><tr><th>Reference</th><th>Date</th><th>Total</th><th>Payment</th><th></th></tr></thead>
+    <tbody>
+      {% for order in orders %}
+      <tr>
+        <td data-label="Order">{{ order.reference }}</td>
+        <td data-label="Date">{{ order.created_at|date:"d M Y, H:i" }}</td>
+        <td data-label="Total">{{ order.total|money_short }}</td>
+        <td data-label="Payment">
+          {% if order.payment_status == 'paid' %}<span class="status status-paid">Paid {{ order.mpesa_reference }}</span>
+          {% elif order.payment_status == 'cod' %}<span class="status status-cod">Cash on delivery</span>
+          {% else %}<span class="status status-pending">Pending</span>{% endif %}
+        </td>
+        <td>
+          <a class="btn-pill btn-ghost btn-sm" href="{% url 'order_receipt' order.reference %}">Receipt</a>
+          {% if order.payment_status == 'pending' %}<a class="btn-pill btn-gold btn-sm" href="{% url 'order_payment' order.reference %}">Pay now</a>{% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="empty">No orders yet. <a href="{% url 'collection' 'handbags' %}">Start shopping →</a></p>
+  {% endif %}
+</div>
+{% endblock %}

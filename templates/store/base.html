@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Zuri Luxee — Women's Luxury Handbags{% endblock %}</title>
+  {% load static store_extras %}
+  <link rel="stylesheet" href="{% static 'css/store.css' %}?v={% now 'U' %}">
+</head>
+<body class="{% block body_class %}{% endblock %}">
+  <div class="announce">Free shipping within Kenya &nbsp;•&nbsp; M-Pesa accepted</div>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="{% url 'home' %}">Zuri Luxee<span>.</span></a>
+      <nav class="main-nav">
+        <a href="{% url 'home' %}">Home</a>
+        {% for c in nav_collections %}
+          <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+        {% endfor %}
+        <a href="{% url 'collection_all' %}?sale=1">Offers</a>
+      </nav>
+      <div class="header-actions">
+        <form class="header-search" action="{% url 'collection_all' %}" method="get" role="search">
+          <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>
+          <input type="search" name="q" placeholder="Search handbags…" value="{{ request.GET.q|default:'' }}" aria-label="Search">
+          <button type="submit" class="search-go" aria-label="Search">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+        <span class="auth-links">
+          <a href="{% if user.is_authenticated %}{% url 'account' %}{% else %}{% url 'login' %}{% endif %}" class="auth-icon" aria-label="Account">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c1.6-3.4 4.2-5 7-5s5.4 1.6 7 5"/></svg>
+          </a>
+          {% if user.is_authenticated %}
+            <a href="{% url 'account' %}">My account</a>
+            {% if user.is_staff %}<a href="{% url 'dashboard' %}">Dashboard</a>{% endif %}
+            <a href="{% url 'logout' %}" class="keep-mobile">Log out</a>
+          {% else %}
+            <a href="{% url 'login' %}">Log in</a>
+            <a href="{% url 'register' %}">Sign up</a>
+          {% endif %}
+        </span>
+        <a href="{% url 'cart_detail' %}" class="cart-link">
+          <svg class="cart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.8H9a1.8 1.8 0 0 1-1.8-1.8L6 8z"/><path d="M9.2 8V6.6a2.8 2.8 0 0 1 5.6 0V8"/></svg>
+          <span class="cart-word">Cart</span>{% if cart_count %} <span class="cart-badge" id="cart-badge">{{ cart_count }}</span>{% else %}<span class="cart-badge" id="cart-badge" hidden></span>{% endif %}</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4 class="footer-brand">Zuri Luxee<span>.</span></h4>
+        <p class="footer-tag">Affordable Luxury, Effortlessly Chic</p>
+        <p>Shop women's luxury handbags online. Designed for everyday elegance, delivered across Kenya.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          {% for c in nav_collections %}<li><a href="{{ c.get_absolute_url }}">{{ c.name }}</a></li>{% endfor %}
+          <li><a href="{% url 'collection_all' %}?sale=1">On offer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Thika &middot; CBS Building Shop 17</li>
+          <li>Opposite 3 Shades Hotel, near Safaricom</li>
+          <li><a href="https://wa.me/254782015497">WhatsApp 0782 015 497</a></li>
+          <li><a href="tel:+254792059600">Call 0792 059 600</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul><li>Instagram</li><li>TikTok</li></ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Zuri Luxee &mdash; demo clone built with Django. Prices in KSh.</span>
+      <div class="footer-pay">
+        <span>M-Pesa STK Push</span>
+        <span>Cash on delivery</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+  {% if cart_toast %}
+  <div id="server-toast" data-ok="{% if cart_toast.ok %}true{% else %}false{% endif %}" data-message="{{ cart_toast.message }}" hidden></div>
+  {% endif %}
+  <script src="{% static 'js/store.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% extends "store/base.html" %}
+{% load store_extras %}
+
+{% block title %}Cart — Zuri Luxee{% endblock %}
+
+{% block content %}
+<div class="container cart-wrap">
+  <h1>Your cart</h1>
+  {% if cart.item_count %}
+  <table class="cart-table stack-mobile">
+    <thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Total</th><th></th></tr></thead>
+    <tbody>
+      {% for item in cart %}
+      <tr>
+        <td class="cart-item">
+          {% with img=item.product.primary_image %}{% if img %}<img src="{{ img.url }}" alt="" class="thumb-sm">{% endif %}{% endwith %}
+          <a href="{{ item.product.get_absolute_url }}">{{ item.product.name }}</a>
+        </td>
+        <td data-label="Price">{{ item.product.price|money_short }}</td>
+        <td data-label="Qty">
+          <form action="{% url 'cart_update' %}" method="post" class="inline-form">
+            {% csrf_token %}
+            <input type="hidden" name="product_id" value="{{ item.product.id }}">
+            <input type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" class="qty qty-sm">
+            <button type="submit" class="btn-pill btn-ghost btn-sm">Update</button>
+          </form>
+        </td>
+        <td data-label="Total">{{ item.line_total|money_short }}</td>
+        <td>
+          <form action="{% url 'cart_update' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="product_id" value="{{ item.product.id }}">
+            <input type="hidden" name="action" value="remove">
+            <button type="submit" class="link-remove">Remove</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <div class="cart-summary">
+    <div class="summary-row"><span>Subtotal</span><strong>{{ cart.subtotal|money }}</strong></div>
+    <p class="ship-note">Shipping calculated at checkout — free within Kenya.</p>
+    <a href="{% url 'checkout' %}" class="btn-pill btn-dark btn-block">Checkout</a>
+    <a href="{% url 'collection' 'handbags' %}" class="btn-pill btn-ghost btn-block">Continue shopping</a>
+  </div>
+  {% else %}
+  <p class="empty">Your cart is empty. <a href="{% url 'collection' 'handbags' %}">Shop handbags →</a></p>
+  {% endif %}
+</div>
+{% endblock %}

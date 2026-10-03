@@ -1,0 +1,20 @@
+{% extends "store/base.html" %}
+
+{% block title %}Create account — Zuri Luxee{% endblock %}
+
+{% block content %}
+<div class="container auth-wrap">
+  <h1>Create account</h1>
+  <form method="post" class="auth-form">
+    {% csrf_token %}
+    {% for field in form %}
+      <label>{{ field.label }} {{ field }}
+        {% if field.help_text %}<small class="help">{{ field.help_text|safe }}</small>{% endif %}
+        {{ field.errors }}
+      </label>
+    {% endfor %}
+    <button type="submit" class="btn-pill btn-dark btn-block">Sign up</button>
+  </form>
+  <p class="auth-alt">Already registered? <a href="{% url 'login' %}">Log in</a></p>
+</div>
+{% endblock %}

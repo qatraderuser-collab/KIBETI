@@ -1,0 +1,68 @@
+{% extends "store/base.html" %}
+{% load store_extras %}
+
+{% block title %}Dashboard — Zuri Luxee{% endblock %}
+
+{% block content %}
+<div class="container dashboard-wrap">
+  <h1>Store dashboard</h1>
+  <div class="stat-grid">
+    <div class="stat-card"><span class="stat-num">{{ revenue|money_short }}</span><span class="stat-label">Paid revenue</span></div>
+    <div class="stat-card"><span class="stat-num">{{ order_count }}</span><span class="stat-label">Orders</span></div>
+    <div class="stat-card"><span class="stat-num">{{ pending_count }}</span><span class="stat-label">Awaiting payment</span></div>
+    <div class="stat-card"><span class="stat-num">{{ customer_count }}</span><span class="stat-label">Registered buyers</span></div>
+    <div class="stat-card"><span class="stat-num">{{ product_count }}</span><span class="stat-label">Products</span></div>
+  </div>
+
+  <div class="dash-grid">
+    <section class="dash-panel">
+      <h2>Revenue, last 14 days</h2>
+      <div class="chart">
+        {% for d in daily %}
+        <div class="bar-col" title="{{ d.day|date:'d M' }} — {{ d.amount|money_short }}">
+          <div class="bar" style="height: {{ d.pct|floatformat:0 }}%"></div>
+          <span class="bar-day">{{ d.day|date:'d' }}</span>
+        </div>
+        {% empty %}
+        <p class="empty">No orders yet.</p>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="dash-panel">
+      <h2>Low stock</h2>
+      <table class="cart-table compact">
+        <tbody>
+          {% for p in low_stock %}
+          <tr><td><a href="{{ p.get_absolute_url }}">{{ p.name|truncatechars:48 }}</a></td><td class="{% if p.stock <= 0 %}stock-out{% else %}stock-low{% endif %}">{{ p.stock }} left</td></tr>
+          {% empty %}<tr><td class="empty">All products well stocked.</td></tr>{% endfor %}
+        </tbody>
+      </table>
+    </section>
+
+    <section class="dash-panel span-2">
+      <h2>Recent orders</h2>
+      <table class="cart-table">
+        <thead><tr><th>Ref</th><th>Customer</th><th>City</th><th>Total</th><th>Payment</th><th>When</th></tr></thead>
+        <tbody>
+          {% for order in recent %}
+          <tr>
+            <td>{{ order.reference }}</td>
+            <td>{{ order.full_name }}</td>
+            <td>{{ order.city }}</td>
+            <td>{{ order.total|money_short }}</td>
+            <td>
+              {% if order.payment_status == 'paid' %}<span class="status status-paid">Paid · M-Pesa</span>
+              {% elif order.payment_status == 'cod' %}<span class="status status-cod">COD</span>
+              {% else %}<span class="status status-pending">Pending</span>{% endif %}
+            </td>
+            <td>{{ order.created_at|date:"d M H:i" }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <p><a class="link-more" href="/admin/store/order/">Manage all orders in admin →</a></p>
+    </section>
+  </div>
+</div>
+{% endblock %}

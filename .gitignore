@@ -1,0 +1,8 @@
+# Local secrets — Daraja keys and passcodes. Never commit.
+.env
+
+__pycache__/
+*.py[cod]
+db.sqlite3
+media/
+_zipstage/

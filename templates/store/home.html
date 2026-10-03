@@ -1,0 +1,134 @@
+{% extends "store/base.html" %}
+{% load static store_extras %}
+
+{% block body_class %}home-hero{% endblock %}
+
+{% block content %}
+<section class="hero hero--editorial">
+  <img class="hero-bg" src="{% static 'img/hero.png' %}" alt="Burgundy handbag in a luxe studio editorial">
+  <div class="hero-inner">
+    <p class="hero-kicker">Zuri Luxee &mdash; handbags, purses &amp; backpacks</p>
+    <h1>Shop Women's Luxury Handbags Online</h1>
+    <p>Affordable luxury, effortlessly chic &mdash; pieces chosen to slip straight into your everyday.</p>
+    <div class="hero-cta">
+      <a href="{% url 'collection' 'handbags' %}" class="btn-pill btn-dark">Shop handbags</a>
+      <a href="{% url 'collection_all' %}?sale=1" class="btn-pill btn-gold">View offers</a>
+    </div>
+  </div>
+</section>
+
+<section class="statement-banner">
+  <div class="statement-inner">
+    <h2>Nothing Complicated About It.</h2>
+    <p class="statement-sub">The everyday carry you&rsquo;ll never take off &mdash; grab yours.</p>
+    <div class="statement-cta">
+      <a href="{% url 'collection' 'handbags' %}" class="statement-btn">Explore</a>
+      <a href="{% url 'collection_all' %}?sale=1" class="statement-btn">Shop</a>
+    </div>
+  </div>
+</section>
+
+<div class="container collection-wrap">
+  <div class="collection-head">
+    <h1>Our collection</h1>
+    <p class="count">{{ total }} product{{ total|pluralize }} · showing latest {{ featured|length }}</p>
+  </div>
+
+  <div class="shop-layout">
+    <aside class="filter-side">
+      <h2>Filter</h2>
+      <div class="filter-group">
+        <span>Collection</span>
+        <div class="filter-links">
+          <a href="{% url 'collection' 'handbags' %}">Handbags</a>
+          <a href="{% url 'collection' 'purses' %}">Purses</a>
+          <a href="{% url 'collection' 'backpacks' %}">Backpacks</a>
+          <a href="{% url 'collection_all' %}">All bags</a>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span>Sort</span>
+        <div class="filter-links">
+          <a class="is-active" href="{% url 'collection_all' %}">Latest arrivals</a>
+          <a href="{% url 'collection_all' %}?sort=price-asc">Price, low to high</a>
+          <a href="{% url 'collection_all' %}?sort=price-desc">Price, high to low</a>
+          <a href="{% url 'collection_all' %}?sort=name">Alphabetical</a>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span>Options</span>
+        <div class="filter-links">
+          <a href="{% url 'collection_all' %}?sale=1">On offer</a>
+          <a href="{% url 'collection_all' %}?instock=1">In stock</a>
+        </div>
+      </div>
+      <div class="filter-actions">
+        <a class="btn-pill btn-dark btn-sm" href="{% url 'collection' 'handbags' %}">View all &rarr;</a>
+      </div>
+    </aside>
+
+    <div class="shop-main">
+      <div class="product-grid">
+        {% for product in featured %}
+          {% include "store/partials/product_card.html" %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="capsule">
+  <div class="capsule-mark">Zuri Luxee <span>&times;</span> Kikapu</div>
+
+  <div class="capsule-grid">
+    <figure class="capsule-panel">
+      <img src="{% static 'img/capsule-woven-tote.png' %}" alt="Model in cream carrying a black woven Zuri Luxee tote" loading="lazy">
+      <figcaption class="capsule-vert">Zuri Luxee &middot; Handbags &middot; Made for everyday</figcaption>
+    </figure>
+
+    <div class="capsule-center">
+      <figure class="capsule-hero">
+        <img src="{% static 'img/capsule-myra-red.png' %}" alt="Model holding a red MYRA snakeskin Zuri Luxee handbag" loading="lazy">
+      </figure>
+      <div class="capsule-mosaic">
+        {% for cell in capsule %}
+          <img src="{{ cell.image.url }}" alt="{{ cell.alt }} — bag detail" loading="lazy">
+        {% endfor %}
+      </div>
+    </div>
+
+    <figure class="capsule-panel">
+      <img src="{% static 'img/capsule-blue-crocodile.png' %}" alt="Model holding a luxe blue crocodile-embossed Zuri Luxee handbag" loading="lazy">
+      <figcaption class="capsule-vert capsule-vert--right">New season &middot; Vintage tones</figcaption>
+    </figure>
+  </div>
+
+  <div class="capsule-copy">
+    <h2 class="capsule-title">Bag Obsessed</h2>
+    <p>Unapologetically Kenyan. Undeniably strong. No compromise between craft and style, in a collection designed to carry you as well as it travels.</p>
+    <a href="{% url 'collection' 'handbags' %}" class="capsule-btn">Shop the Zuri Luxee &times; Kikapu edit</a>
+  </div>
+</section>
+
+<section class="trending">
+  <div class="container">
+  <h2 class="trending-title">Trending</h2>
+  <p class="trending-sub">Classic silhouettes and fresh arrivals, built for your everyday from the ground up.</p>
+  <div class="tile-grid">
+    {% for tile in trending %}
+      <a class="tile" href="{{ tile.product.get_absolute_url }}">
+        <span class="tile-media">
+          {% if tile.image %}<img src="{{ tile.image.url }}" alt="{{ tile.label }}" loading="lazy">{% endif %}
+        </span>
+        <span class="tile-label">{{ tile.label }}</span>
+      </a>
+    {% endfor %}
+  </div>
+  </div>
+</section>
+
+<section class="value-props container">
+  <div><h3>KSh prices, no surprises</h3><p>All prices in Kenyan Shillings.</p></div>
+  <div><h3>Nationwide delivery</h3><p>Same-day in Nairobi, 2–4 days upcountry.</p></div>
+</section>
+{% endblock %}

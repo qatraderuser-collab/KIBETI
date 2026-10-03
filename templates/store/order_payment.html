@@ -1,0 +1,43 @@
+{% extends "store/base.html" %}
+{% load store_extras %}
+
+{% block title %}Confirm payment — Zuri Luxee{% endblock %}
+
+{% block content %}
+<div class="container payment-wrap">
+  <div class="payment-card">
+    <div class="mpesa-logo">📱 M-Pesa</div>
+    <h1>Check your phone</h1>
+    <p>An STK push has been sent to <strong>{{ order.phone }}</strong> for <strong>{{ order.total|money }}</strong>.
+      Enter your M-Pesa PIN on your handset to complete order <strong>{{ order.reference }}</strong>.</p>
+    {% if mpesa_mode == 'demo' %}
+      <p class="demo-note">Demo mode — no Daraja credentials configured. The simulated prompt will auto-confirm in a few seconds.</p>
+    {% endif %}
+    <div class="pay-status" id="pay-status">
+      <span class="spinner"></span> Waiting for payment…
+    </div>
+    <a href="{% url 'account' %}" class="link-muted">Back to my orders</a>
+  </div>
+</div>
+<script>
+(function () {
+  var started = Date.now();
+  var box = document.getElementById('pay-status');
+  var timer = setInterval(function () {
+    fetch('{% url 'order_payment_status' order.reference %}')
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (j.status === 'paid') {
+          clearInterval(timer);
+          box.innerHTML = '<span class="pay-ok">✔ Paid</span> M-Pesa receipt: ' + (j.mpesa_reference || '—');
+          setTimeout(function () { location.reload(); }, 1000);
+        } else if (j.status === 'failed') {
+          clearInterval(timer);
+          box.innerHTML = '<span class="pay-err">✖ Payment failed or cancelled.</span> Try again from My Orders.';
+        }
+      });
+    if (Date.now() - started > 120000) { clearInterval(timer); box.innerHTML = 'No response yet — check your phone, then refresh.'; }
+  }, 2000);
+})();
+</script>
+{% endblock %}

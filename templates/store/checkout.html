@@ -1,0 +1,54 @@
+{% extends "store/base.html" %}
+{% load store_extras %}
+
+{% block title %}Checkout — Zuri Luxee{% endblock %}
+
+{% block content %}
+<div class="container checkout-wrap">
+  <h1>Checkout</h1>
+  {% if not user.is_authenticated %}
+  <p class="auth-hint">Have an account? <a href="{% url 'login' %}?next={% url 'checkout' %}">Log in</a> for faster checkout, or <a href="{% url 'register' %}">sign up</a> to track orders.</p>
+  {% endif %}
+  <div class="checkout-grid">
+    <form method="post" class="checkout-form">
+      {% csrf_token %}
+      {{ form.non_field_errors }}
+      <input type="hidden" name="promo" id="promo-field" value="">
+      <fieldset class="pay-methods">
+        <legend>Payment method</legend>
+        <label class="pay-option">
+          <input type="radio" name="payment_method" value="mpesa" checked>
+          <span><strong>M-Pesa (STK Push)</strong><br><small>We send a payment prompt to your phone at checkout.</small></span>
+        </label>
+        <label class="pay-option">
+          <input type="radio" name="payment_method" value="cod">
+          <span><strong>Cash on delivery</strong><br><small>Pay the rider when your bag arrives.</small></span>
+        </label>
+      </fieldset>
+      <div class="form-grid">
+        <label>{{ form.full_name.label_tag }}{{ form.full_name }}</label>
+        <label>{{ form.email.label_tag }}{{ form.email }}</label>
+        <label>{{ form.phone.label_tag }}{{ form.phone }}</label>
+        <label>{{ form.city.label_tag }}{{ form.city }}</label>
+        <label class="span-2">{{ form.address.label_tag }}{{ form.address }}</label>
+        <label class="span-2">{{ form.notes.label_tag }}{{ form.notes }}</label>
+      </div>
+      <button type="submit" class="btn-pill btn-dark">Place order</button>
+    </form>
+    <aside class="order-summary">
+      <h3>Order summary</h3>
+      {% for item in cart %}
+        <div class="summary-row"><span>{{ item.product.name|truncatechars:36 }} × {{ item.quantity }}</span><span>{{ item.line_total|money_short }}</span></div>
+      {% endfor %}
+      <div class="summary-row"><span>Delivery</span><span>Free · Kenya</span></div>
+      <div class="promo-box">
+        <input type="text" id="promo-input" placeholder="Promo code" autocomplete="off" data-url="{% url 'promo_preview' %}" value="{{ request.POST.promo|default:'' }}">
+        <button type="button" id="promo-apply" class="btn-pill btn-ghost btn-sm">Apply</button>
+      </div>
+      <p class="promo-msg" id="promo-msg" {% if promo_error %}data-error{% endif %}>{{ promo_error|default:'' }}</p>
+      <div class="summary-row" id="discount-row" hidden><span>Discount</span><span id="discount-amount">−0.00</span></div>
+      <div class="summary-row total"><span>Total</span><strong id="grand-total" data-base="{{ cart.subtotal }}">{{ cart.subtotal|money }}</strong></div>
+    </aside>
+  </div>
+</div>
+{% endblock %}

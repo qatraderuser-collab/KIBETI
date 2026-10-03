@@ -1,0 +1,59 @@
+{% extends "store/base.html" %}
+{% load store_extras %}
+
+{% block title %}Receipt {{ order.reference }} — Zuri Luxee{% endblock %}
+
+{% block content %}
+<div class="container receipt-wrap">
+  <div class="receipt no-print">
+    <button type="button" class="btn-pill btn-dark" onclick="window.print()">Print receipt</button>
+    <a class="btn-pill btn-ghost" href="{% url 'account' %}">Back to account</a>
+  </div>
+  <article class="receipt-card">
+    <header class="receipt-head">
+      <h1>Zuri Luxee</h1>
+      <p>CBS Building Shop 17, Thika</p>
+      <p>Opp. 3 Shades Hotel, near Safaricom</p>
+      <p>WhatsApp 0782 015 497 &nbsp;|&nbsp; Call 0792 059 600</p>
+    </header>
+    <hr class="rule">
+    <div class="receipt-line"><span># {{ order.reference }}</span><span>{{ order.created_at|date:"M j, Y" }}</span></div>
+    <hr class="rule">
+    <div class="receipt-line"><span class="label">Customer:</span><span>{{ order.full_name }}</span></div>
+    <div class="receipt-line"><span class="label">Phone:</span><span>{{ order.phone }}</span></div>
+    <div class="receipt-line"><span class="label">Deliver to:</span><span>{{ order.address }}, {{ order.city }}</span></div>
+    {% if order.notes %}<div class="receipt-line"><span class="label">Notes:</span><span>{{ order.notes }}</span></div>{% endif %}
+    <hr class="rule">
+    {% for line in order.items.all %}
+    <div class="receipt-line item">
+      <span>{{ line.quantity }} × {{ line.product_name }}</span>
+      <span>{{ line.price|mul:line.quantity|money_short }}</span>
+    </div>
+    {% endfor %}
+    <hr class="rule">
+    <div class="receipt-line"><span class="label">Subtotal</span><span>{{ order.subtotal|default:order.total|money_short }}</span></div>
+    {% if order.discount %}
+    <div class="receipt-line"><span class="label">Discount ({{ order.promo_code }})</span><span>−{{ order.discount|money_short }}</span></div>
+    {% endif %}
+    <div class="receipt-line"><span class="label">Delivery</span><span>Free</span></div>
+    <hr class="rule">
+    <div class="receipt-line total"><span>TOTAL</span><span>{{ order.total|money }}</span></div>
+    <hr class="rule">
+    <div class="receipt-line">
+      <span class="label">Payment:</span>
+      <span>
+        {% if order.payment_status == 'paid' %}M-Pesa · {{ order.mpesa_reference }}
+        {% elif order.payment_status == 'cod' %}Cash on delivery
+        {% else %}Awaiting payment{% endif %}
+      </span>
+    </div>
+    <div class="receipt-qr">
+      {{ qr_svg }}
+      <span class="receipt-code">{{ order.reference }}</span>
+      <span class="receipt-qr-hint">Scan to open this receipt</span>
+    </div>
+    <hr class="rule">
+    <p class="receipt-thanks">Asante for shopping with Zuri Luxee!</p>
+  </article>
+</div>
+{% endblock %}
