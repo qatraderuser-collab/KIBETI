@@ -327,10 +327,11 @@ img { max-width: 100%; display: block; }
   }
   .stack-mobile .cart-item { flex: 1 1 auto; min-width: 0; }
 
-  /* Fingers, not cursors. Pills measured 32px (Add to cart), the qty/remove controls 17–33px, and
-     the collection price inputs 35px — all under the ~44px a thumb wants. min-height plus flex
-     centring grows only the hit area, and only on phones, so desktop keeps its tighter look.
-     Targets every .btn-pill, not just .btn-sm: Add-to-cart has no size modifier. */
+  /* Fingers, not cursors. A second sweep at 390px still found thumbs aiming at 17-37px: Add to cart
+     32, account icon 30, cart pill 32, filter rows 32, "Clear" 20, account-form inputs 37, footer
+     links 19, breadcrumbs 17. min-height plus flex centring grows only the hit area, and only on
+     phones, so desktop keeps its tighter look. Inline text links grow with padding plus an equal
+     negative margin, which widens the target without moving the line. */
   .btn-pill, .link-remove {
     display: inline-flex;
     align-items: center;
@@ -339,7 +340,14 @@ img { max-width: 100%; display: block; }
   }
   input.qty { min-height: 44px; }
   .form-grid input, .filter-side input[type="search"], .filter-side select { min-height: 44px; }
+  .auth-form input:not([type="checkbox"]):not([type="radio"]) { min-height: 44px; }
   .filter-price input { min-height: 44px; }
+  .auth-icon { width: 44px; height: 44px; }
+  .cart-link { min-height: 44px; }
+  .filter-links a, .filter-clear { display: inline-flex; align-items: center; min-height: 44px; }
+  .site-footer ul { gap: 0; }
+  .site-footer li a { display: inline-flex; align-items: center; min-height: 44px; }
+  .breadcrumb a { display: inline-flex; align-items: center; padding: 12px 5px; margin: -12px -5px; }
   .header-search { padding-top: 5px; padding-bottom: 5px; }
   .header-search input { min-height: 36px; }
   .header-search .search-go { width: 36px; height: 36px; }
