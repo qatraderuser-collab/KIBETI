@@ -79,6 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(function (res) {
           zuriToast(res.json.message || (res.json.ok ? 'Added to cart' : 'Could not add item'), res.json.ok);
           if (res.json.cart_count !== undefined) {
+            var bn = document.getElementById('bn-badge');
+            if (bn) { bn.textContent = res.json.cart_count; bn.hidden = false; }
             var badge = document.getElementById('cart-badge');
             if (badge) {
               badge.textContent = res.json.cart_count;
@@ -94,3 +96,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+(function () {
+  var t = document.querySelector('.filter-toggle');
+  if (!t) return;
+  t.addEventListener('click', function () {
+    var open = t.closest('.filter-side').classList.toggle('is-open');
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();

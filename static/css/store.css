@@ -136,12 +136,21 @@ img { max-width: 100%; display: block; }
   padding: 0 20px 0 clamp(20px, 5vw, 72px);
 }
 .hero--editorial .hero-kicker { color: #f0c98a; }
-.hero--editorial h1 { color: #fff; font-size: clamp(30px, 4.2vw, 48px); text-shadow: 0 1px 10px rgba(0,0,0,.35); }
+/* Two classes, not one: the generic `.hero h1` further down is 44px at equal specificity and would
+   otherwise win, pinning the headline to desktop size on a phone. Max stays 44px so desktop is unchanged. */
+.hero.hero--editorial h1 { color: #fff; font-size: clamp(26px, 4.2vw, 44px); text-shadow: 0 1px 10px rgba(0,0,0,.35); }
 .hero--editorial p { color: #fff; font-size: 17px; max-width: 46ch; text-shadow: 0 1px 8px rgba(0,0,0,.4); }
 .hero--editorial .hero-cta { display: flex; gap: 10px; justify-content: flex-start; }
 @media (max-width: 700px) {
   .hero--editorial::after { background: linear-gradient(0deg, rgba(26,24,21,.6) 12%, rgba(26,24,21,.15) 55%, rgba(26,24,21,0) 100%); }
-  .hero--editorial .hero-inner { inset: 0; justify-content: flex-end; padding-bottom: 28px; }
+  /* At phone width the editorial photo is ~280px tall while the headline block needs ~450px, so the
+     absolutely positioned overlay spilled off the top of the image — and since `main` is pulled up under
+     the transparent header, off the screen: the kicker and first lines of the h1 rendered above the top
+     edge. Below 700px the copy drops out of the overlay onto a charcoal panel under the photo. The
+     picture keeps its whole frame either way; nothing is cropped. */
+  .hero--editorial { background: var(--ink); }
+  .hero--editorial .hero-inner { position: static; inset: auto; max-width: none; padding: 18px 20px 30px; }
+  .hero--editorial p { font-size: 15.5px; }
 }
 .hero-inner { padding: 72px 20px; max-width: 640px; }
 .hero-kicker { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; font-weight: 700; color: var(--gold); margin: 0 0 10px; }
@@ -352,6 +361,21 @@ img { max-width: 100%; display: block; }
   .header-search input { min-height: 36px; }
   .header-search .search-go { width: 36px; height: 36px; }
   .pay-option input, .filter-side input[type="checkbox"] { width: 20px; height: 20px; }
+
+  /* The shop on a phone. Stacked 44px filter rows turned the panel into a 742px wall that pushed the
+     first bag below the fold (it started at y=1099 in an 844px viewport), and `.shop-main .product-grid`
+     — auto-fill with 208px tracks — collapsed to one 486px card per row. Filter links wrap sideways as
+     chips and the grid goes 2-up like the home page, so products are one short scroll away. */
+  .filter-group { padding: 10px 0; }
+  .filter-links { flex-direction: row; flex-wrap: wrap; gap: 6px; }
+  .filter-links a { padding: 0 12px; border-radius: 999px; background: #fff; border: 1px solid var(--line); }
+  .filter-links a.is-active { border-color: var(--ink); }
+  .shop-main .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 12px; }
+  /* 2-up leaves a 161px card, and price + an 113px "Add to cart" pill cannot share that row — the button
+     hung 48px past the viewport. The foot stacks and the pill takes the width instead. */
+  .card-foot { flex-direction: column; align-items: stretch; gap: 8px; }
+  .card-add { flex: 1 1 auto; }
+  .card-add .btn-pill { width: 100%; padding-left: 10px; padding-right: 10px; }
 }
 .cart-summary { max-width: 380px; margin-left: auto; margin-top: 26px; border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
 .summary-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 14px; }
@@ -658,3 +682,56 @@ img { max-width: 100%; display: block; }
 .footer-pay { display: flex; flex-wrap: wrap; gap: 8px; }
 .footer-pay span { border: 1px solid rgba(240, 201, 138, .3); border-radius: 999px; padding: 5px 12px; font-size: 11px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: #f0c98a; }
 @media (max-width: 560px) { .footer-bottom { justify-content: flex-start; } }
+
+/* ---- Phone app-style shell (Jumia-like): bottom tab bar, category chip row, collapsible filters,
+   dense 2-up cards and a sticky buy bar. All of it is phone-only; desktop is untouched. ---- */
+.bottom-nav, .filter-toggle { display: none; }
+@media (max-width: 600px) {
+  body { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
+  .announce { font-size: 12px; padding: 6px 10px; }
+
+  /* Header: logo + cart on one row would crowd; keep logo/search/actions, then a scrolling chip row. */
+  .header-row { padding-top: 8px; padding-bottom: 8px; }
+  .main-nav { display: flex; order: 4; flex: 1 1 100%; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .main-nav::-webkit-scrollbar { display: none; }
+  .main-nav a { flex: none; border: 1px solid var(--line); border-radius: 999px; background: #fff; padding: 6px 14px; font-size: 13px; font-weight: 600; }
+  .home-hero .main-nav a { color: var(--ink); text-shadow: none; }
+  .auth-links, .cart-link { display: none; }
+  .header-actions { order: 2; flex: 1 1 100%; }
+
+  .bottom-nav {
+    display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+    background: var(--paper-raised); border-top: 1px solid var(--line);
+    padding-bottom: env(safe-area-inset-bottom); box-shadow: 0 -4px 16px rgba(26,24,21,.08);
+  }
+  .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 56px; font-size: 11px; font-weight: 600; color: var(--muted); text-decoration: none; }
+  .bottom-nav a.is-active { color: var(--gold); }
+  .bn-icon { position: relative; display: inline-flex; }
+  .bn-badge { position: absolute; top: -5px; right: -9px; background: var(--gold); color: #fff; border-radius: 999px; min-width: 17px; height: 17px; padding: 0 4px; font-size: 10px; line-height: 17px; text-align: center; }
+  .bn-badge[hidden] { display: none; }
+
+  /* Filters tuck behind one button so products come first. */
+  .filter-side { position: static; padding: 0; border: 0; background: transparent; }
+  .filter-side > h2 { display: none; }
+  .filter-toggle { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; border: 1px solid var(--line); border-radius: 10px; background: #fff; font: 700 14px var(--sans); color: var(--ink); }
+  .filter-side form { display: none; margin-top: 10px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper-raised); }
+  .filter-side.is-open form { display: block; }
+
+  /* Denser product tiles. */
+  .collection-wrap { padding: 18px 12px 32px; }
+  .shop-main .product-grid, .product-grid { gap: 14px 8px; }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card-media { padding: 6px; border-radius: 10px; background: #fff; border-color: var(--line); }
+  .card-body { padding-top: 8px; gap: 5px; }
+  .card-title { font-size: 12px; text-transform: none; font-weight: 600; }
+  .card-price { flex-wrap: wrap; gap: 2px 6px; }
+  .card-price .price { font-size: 15px; }
+  .card-flag { display: none; }
+  .badge { top: 6px; left: 6px; font-size: 11px; padding: 2px 8px; }
+
+  /* Product page: buy bar pinned above the tab bar. */
+  .product-wrap { padding: 14px 14px 24px; }
+  .product-info h1 { font-size: 21px; }
+  .buy-form { position: fixed; left: 0; right: 0; bottom: calc(56px + env(safe-area-inset-bottom)); z-index: 25; margin: 0; padding: 8px 12px; gap: 10px; background: var(--paper-raised); border-top: 1px solid var(--line); }
+  .buy-form .btn-pill { flex: 1; }
+}
