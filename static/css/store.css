@@ -777,3 +777,26 @@ img { max-width: 100%; display: block; }
 @media (max-width: 600px) {
   .shop-main .product-grid, .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Phone header polish: tighter, with the search field clearly defined. */
+@media (max-width: 600px) {
+  .site-header { box-shadow: 0 2px 10px rgba(26, 24, 21, .07); }
+  .header-row { padding: 8px 14px 10px; row-gap: 8px; }
+  .logo { font-size: 24px; line-height: 1; }
+  .nav-toggle, .home-hero .nav-toggle { width: 40px; height: 40px; background: transparent; border-color: transparent; }
+  .header-search, .home-hero .header-search {
+    background: #fff; border: 1.5px solid var(--ink); border-radius: 12px;
+    padding: 0 0 0 12px; min-height: 44px; gap: 8px;
+    box-shadow: none;
+  }
+  .header-search:focus-within { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201, 138, 43, .18); }
+  .header-search input { font-size: 15px; min-height: 42px; padding: 0; }
+  .header-search .search-go, .home-hero .header-search .search-go {
+    width: 44px; height: 44px; border-radius: 0 10px 10px 0; background: var(--gold); color: #fff;
+  }
+}
+@media (max-width: 600px) {
+  .hero--editorial .btn-dark { background: transparent; border: 1.5px solid #fff; color: #fff; }
+  .hero--editorial .hero-cta { gap: 10px; }
+  .hero--editorial .btn-gold { margin-left: 0; }
+}
