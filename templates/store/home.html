@@ -68,10 +68,14 @@
     </aside>
 
     <div class="shop-main">
-      <div class="product-grid">
-        {% for product in featured %}
-          {% include "store/partials/product_card.html" %}
-        {% endfor %}
+      <div class="row-carousel">
+        <button type="button" class="row-arrow row-prev" aria-label="Scroll left">&#8249;</button>
+        <div class="product-grid">
+          {% for product in featured %}
+            {% include "store/partials/product_card.html" %}
+          {% endfor %}
+        </div>
+        <button type="button" class="row-arrow row-next" aria-label="Scroll right">&#8250;</button>
       </div>
     </div>
   </div>
