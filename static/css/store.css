@@ -58,8 +58,8 @@ img { max-width: 100%; display: block; }
      The nav panel and the hidden cart/auth links are handled in the phone shell at the end. */
   .header-row { gap: 10px; row-gap: 8px; flex-wrap: wrap; }
   .logo { flex: 0 0 auto; white-space: nowrap; }
-  .header-actions { gap: 8px; flex: 1 1 100%; min-width: 0; margin-left: 0; }
-  .header-search { width: auto; flex: 1 1 auto; min-width: 0; max-width: none; padding-left: 9px; }
+  .header-actions { gap: 8px; flex: 1 1 0; min-width: 0; margin-left: 0; }
+  .header-search { width: auto; flex: 1 1 0; min-width: 0; max-width: none; padding-left: 9px; }
   .header-search:focus-within { width: auto; }
 }
 
@@ -688,10 +688,10 @@ img { max-width: 100%; display: block; }
   .announce { font-size: 12px; padding: 6px 10px; }
   .header-row { padding-top: 8px; padding-bottom: 8px; }
   .auth-links, .cart-link { display: none; }
-  .header-actions { order: 2; flex: 1 1 100%; }
+  .header-actions { order: 2; flex: 1 1 0; min-width: 0; }
 
   .nav-toggle {
-    flex: none; order: 2; margin-left: auto;
+    flex: none; order: 3;
     width: 44px; height: 44px; display: grid; place-items: center;
     border: 1px solid var(--line); border-radius: 999px;
     background: var(--paper-raised); color: var(--ink); cursor: pointer;
@@ -778,22 +778,33 @@ img { max-width: 100%; display: block; }
   .shop-main .product-grid, .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-/* Phone header polish: tighter, with the search field clearly defined. */
+/* Phone header: one compact row — logo, search pill, menu button — and a lighter pill. The field
+   keeps a 44px hit height inside the row; only the second header row and the heavy border go away. */
 @media (max-width: 600px) {
   .site-header { box-shadow: 0 2px 10px rgba(26, 24, 21, .07); }
-  .header-row { padding: 8px 14px 10px; row-gap: 8px; }
-  .logo { font-size: 24px; line-height: 1; }
-  .nav-toggle, .home-hero .nav-toggle { width: 40px; height: 40px; background: transparent; border-color: transparent; }
+  .header-row { padding: 8px 14px; row-gap: 8px; }
+  .logo { font-size: 20px; line-height: 1; }
+  .nav-toggle, .home-hero .nav-toggle { background: transparent; border-color: transparent; }
+  /* The pill shares its row with the logo and menu button, so every pixel of the field counts: the
+     magnifier is redundant next to a placeholder and a gold arrow, and dropping it buys ~21px. */
+  .header-search .search-icon { display: none; }
   .header-search, .home-hero .header-search {
-    background: #fff; border: 1.5px solid var(--ink); border-radius: 12px;
-    padding: 0 0 0 12px; min-height: 44px; gap: 8px;
+    background: #fff; border: 1px solid var(--ink); border-radius: 999px;
+    padding: 0 0 0 11px; min-height: 44px; gap: 6px;
     box-shadow: none;
   }
   .header-search:focus-within { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201, 138, 43, .18); }
-  .header-search input { font-size: 15px; min-height: 42px; padding: 0; }
+  .header-search input { font-size: 14px; min-height: 42px; padding: 0; }
   .header-search .search-go, .home-hero .header-search .search-go {
-    width: 44px; height: 44px; border-radius: 0 10px 10px 0; background: var(--gold); color: #fff;
+    width: 34px; height: 34px; border-radius: 50%; background: var(--gold); color: #fff;
   }
+}
+/* Below 361px the wordmark + menu button leave only ~42px of typing width, so the field takes its
+   old full-width row back — a tall header beats a search box you cannot read. */
+@media (max-width: 360px) {
+  .header-actions { order: 3; flex: 1 1 100%; }
+  .nav-toggle { order: 2; margin-left: auto; }
+  .header-search .search-icon { display: block; }
 }
 @media (max-width: 600px) {
   .hero--editorial .btn-dark { background: transparent; border: 1.5px solid #fff; color: #fff; }
