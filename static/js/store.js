@@ -126,19 +126,3 @@ document.addEventListener('DOMContentLoaded', function () {
     t.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 })();
-
-(function () {
-  var wrap = document.querySelector('.row-carousel');
-  if (!wrap) return;
-  var row = wrap.querySelector('.product-grid');
-  function step(dir) { row.scrollBy({ left: dir * row.clientWidth * 0.85, behavior: 'smooth' }); }
-  wrap.querySelector('.row-prev').addEventListener('click', function () { step(-1); });
-  wrap.querySelector('.row-next').addEventListener('click', function () { step(1); });
-  function sync() {
-    wrap.querySelector('.row-prev').hidden = row.scrollLeft < 8;
-    wrap.querySelector('.row-next').hidden = row.scrollLeft + row.clientWidth >= row.scrollWidth - 8;
-  }
-  row.addEventListener('scroll', sync, { passive: true });
-  window.addEventListener('resize', sync);
-  sync();
-})();
