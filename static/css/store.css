@@ -768,3 +768,12 @@ img { max-width: 100%; display: block; }
   .buy-form { position: fixed; left: 0; right: 0; bottom: calc(56px + env(safe-area-inset-bottom)); z-index: 25; margin: 0; padding: 8px 12px; gap: 10px; background: var(--paper-raised); border-top: 1px solid var(--line); }
   .buy-form .btn-pill { flex: 1; }
 }
+
+/* Single-column shop layout must not let a wide child stretch the page. */
+@media (max-width: 980px) { .shop-layout { grid-template-columns: minmax(0, 1fr); } }
+.shop-main { min-width: 0; }
+
+/* Phones: product grids stay a wrapping grid, two cards per row, on every page. */
+@media (max-width: 600px) {
+  .shop-main .product-grid, .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
