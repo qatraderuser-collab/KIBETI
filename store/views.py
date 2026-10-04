@@ -85,6 +85,11 @@ def home(request):
         tiles.append({"product": p, "label": " ".join(words).strip(" |-–—,·"), "image": p.primary_image})
     capsule = [{"image": p.primary_image, "alt": p.name} for p in products.select_related("category").prefetch_related("images")[:6]]
     capsule = [c for c in capsule if c["image"]][:3]
+    cat_tiles = []
+    for c in Category.objects.all():
+        first = products.filter(category=c).prefetch_related("images").first()
+        img = first.primary_image if first else None
+        cat_tiles.append({"name": c.name, "url": c.get_absolute_url(), "image": img})
     return render(
         request,
         "store/home.html",
@@ -92,6 +97,7 @@ def home(request):
             "featured": _mix_categories(products, 12),
             "total": products.count(),
             "collections": Category.objects.all(),
+            "cat_tiles": cat_tiles,
             "trending": tiles,
             "capsule": capsule,
         },

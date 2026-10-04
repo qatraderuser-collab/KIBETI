@@ -17,6 +17,21 @@
   </div>
 </section>
 
+<section class="cat-strip">
+  <h2 class="cat-strip-title">Top categories</h2>
+  <div class="cat-strip-row">
+    {% for t in cat_tiles %}
+    <a class="cat-chip" href="{{ t.url }}">
+      <span class="cat-chip-img">{% if t.image %}<img src="{{ t.image.url }}" alt="" loading="lazy">{% endif %}</span>
+      <span class="cat-chip-name">{{ t.name }}</span>
+    </a>
+    {% endfor %}
+    <a class="cat-chip cat-chip--offer" href="{% url 'collection_all' %}?sale=1">
+      <span class="cat-chip-img"><b>%</b></span>
+      <span class="cat-chip-name">Offers</span>
+    </a>
+  </div>
+</section>
 <section class="statement-banner">
   <div class="statement-inner">
     <h2>Nothing Complicated About It.</h2>

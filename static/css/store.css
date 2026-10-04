@@ -811,3 +811,17 @@ img { max-width: 100%; display: block; }
   .hero--editorial .hero-cta { gap: 10px; }
   .hero--editorial .btn-gold { margin-left: 0; }
 }
+
+/* Category strip (Carrefour-style "Top categories"): phones only. */
+.cat-strip { display: none; }
+@media (max-width: 600px) {
+  .cat-strip { display: block; padding: 16px 0 6px; background: var(--paper); }
+  .cat-strip-title { font-size: 17px; margin: 0 14px 10px; }
+  .cat-strip-row { display: flex; gap: 12px; overflow-x: auto; padding: 0 14px 6px; scrollbar-width: none; scroll-snap-type: x proximity; }
+  .cat-strip-row::-webkit-scrollbar { display: none; }
+  .cat-chip { flex: 0 0 84px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; scroll-snap-align: start; }
+  .cat-chip-img { width: 84px; height: 84px; border-radius: 14px; background: #fff; border: 1px solid var(--line); display: grid; place-items: center; overflow: hidden; }
+  .cat-chip-img img { width: 100%; height: 100%; object-fit: contain; padding: 6px; }
+  .cat-chip-name { font-size: 12.5px; font-weight: 600; text-align: center; line-height: 1.25; }
+  .cat-chip--offer .cat-chip-img { background: var(--gold); border-color: var(--gold); color: #fff; font-size: 34px; }
+}
