@@ -49,6 +49,22 @@ def _apply_filters(request, products):
     return products, q, sale, sort, instock, bounds
 
 
+def _mix_categories(queryset, limit):
+    """Round-robin across categories (newest first within each) so the home page isn't one category."""
+    buckets = {}
+    for p in queryset.select_related("category"):
+        buckets.setdefault(p.category_id, [])
+        if len(buckets[p.category_id]) < limit:
+            buckets[p.category_id].append(p)
+    mixed = []
+    lists = list(buckets.values())
+    for i in range(limit):
+        for lst in lists:
+            if i < len(lst):
+                mixed.append(lst[i])
+    return mixed[:limit]
+
+
 def home(request):
     products = Product.objects.filter(is_active=True).order_by("-created_at", "id")
     # Trending shows the bag on its own: only photos flagged as a single bag on a plain backdrop, and
@@ -64,7 +80,7 @@ def home(request):
         .order_by("-bg_rank", "-created_at", "id")
     )
     tiles = []
-    for p in trending_products.select_related("category").prefetch_related("images")[:16]:
+    for p in _mix_categories(trending_products.prefetch_related("images"), 16):
         words = p.name.replace("’", "'").split()[:4]
         tiles.append({"product": p, "label": " ".join(words).strip(" |-–—,·"), "image": p.primary_image})
     capsule = [{"image": p.primary_image, "alt": p.name} for p in products.select_related("category").prefetch_related("images")[:6]]
@@ -73,7 +89,7 @@ def home(request):
         request,
         "store/home.html",
         {
-            "featured": products[:12],
+            "featured": _mix_categories(products, 12),
             "total": products.count(),
             "collections": Category.objects.all(),
             "trending": tiles,
