@@ -900,3 +900,15 @@ img { max-width: 100%; display: block; }
   .home-row-scroll::-webkit-scrollbar { display: none; }
   .home-row-scroll .product-card { flex: 0 0 44%; max-width: 180px; scroll-snap-align: start; }
 }
+
+/* Trending on phones: one line of circles that slides right to left. */
+@media (max-width: 600px) {
+  .tile-grid {
+    display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none;
+    margin: 0 -20px; padding: 0 20px 8px; scroll-padding-left: 20px;
+  }
+  .tile-grid::-webkit-scrollbar { display: none; }
+  .tile { flex: 0 0 96px; scroll-snap-align: start; gap: 8px; }
+  .tile-media { --tile-inner: 88px; }
+  .tile-label { font-size: 12.5px; text-align: center; }
+}
