@@ -143,3 +143,17 @@ document.addEventListener('DOMContentLoaded', function () {
     input.addEventListener('change', function () { form.submit(); });
   });
 })();
+
+(function () {
+  var btn = document.getElementById('place-btn');
+  if (!btn) return;
+  var total = document.getElementById('grand-total');
+  function label() {
+    var cod = document.querySelector('input[name="payment_method"]:checked');
+    var amt = total ? total.textContent : btn.dataset.total;
+    btn.textContent = cod && cod.value === 'cod' ? 'Place order · ' + amt : 'Pay ' + amt + ' with M-Pesa';
+  }
+  document.querySelectorAll('input[name="payment_method"]').forEach(function (r) { r.addEventListener('change', label); });
+  if (total) new MutationObserver(label).observe(total, { childList: true, characterData: true, subtree: true });
+  label();
+})();

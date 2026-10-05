@@ -6,9 +6,6 @@
 {% block content %}
 <div class="container checkout-wrap">
   <h1>Checkout</h1>
-  {% if not user.is_authenticated %}
-  <p class="auth-hint">Have an account? <a href="{% url 'login' %}?next={% url 'checkout' %}">Log in</a> for faster checkout, or <a href="{% url 'register' %}">sign up</a> to track orders.</p>
-  {% endif %}
   <div class="checkout-grid">
     <form method="post" class="checkout-form">
       {% csrf_token %}
@@ -28,12 +25,12 @@
       <div class="form-grid">
         <label>{{ form.full_name.label_tag }}{{ form.full_name }}</label>
         <label>{{ form.email.label_tag }}{{ form.email }}</label>
-        <label>{{ form.phone.label_tag }}{{ form.phone }}</label>
+        <label class="span-2 phone-field">M-Pesa phone number {{ form.phone }}<small>e.g. 0712 345 678 — the payment prompt goes to this number.</small></label>
         <label>{{ form.city.label_tag }}{{ form.city }}</label>
         <label class="span-2">{{ form.address.label_tag }}{{ form.address }}</label>
-        <label class="span-2">{{ form.notes.label_tag }}{{ form.notes }}</label>
+        <details class="span-2 notes-toggle"><summary>Add a delivery note (optional)</summary>{{ form.notes }}</details>
       </div>
-      <button type="submit" class="btn-pill btn-dark">Place order</button>
+      <button type="submit" class="btn-pill btn-dark btn-place" id="place-btn" data-total="{{ cart.subtotal|money }}">Pay {{ cart.subtotal|money }} with M-Pesa</button>
     </form>
     <aside class="order-summary">
       <h3>Order summary</h3>

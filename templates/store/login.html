@@ -5,6 +5,7 @@
 {% block content %}
 <div class="container auth-wrap">
   <h1>Welcome back</h1>
+  {% if request.GET.next %}<p class="auth-hint">Log in to continue to checkout.</p>{% endif %}
   <form method="post" class="auth-form">
     {% csrf_token %}
     {{ form.non_field_errors }}
@@ -12,6 +13,6 @@
     <label>Password {{ form.password }}</label>
     <button type="submit" class="btn-pill btn-dark btn-block">Log in</button>
   </form>
-  <p class="auth-alt">New here? <a href="{% url 'register' %}">Create an account</a></p>
+  <p class="auth-alt">New here? <a href="{% url 'register' %}{% if request.GET.next %}?next={{ request.GET.next|urlencode }}{% endif %}">Create an account</a></p>
 </div>
 {% endblock %}

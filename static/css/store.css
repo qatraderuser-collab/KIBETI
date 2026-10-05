@@ -873,3 +873,15 @@ img { max-width: 100%; display: block; }
   .cart-summary .ship-note, .cart-summary .btn-ghost { display: none; }
   .cart-summary .btn-block { margin: 0; flex: 1.2; }
 }
+
+.phone-field small { display: block; color: var(--muted); font-size: 12px; margin-top: 4px; }
+.notes-toggle summary { cursor: pointer; font-size: 14px; color: var(--muted); padding: 8px 0; }
+.btn-place { width: 100%; min-height: 50px; font-size: 16px; margin-top: 6px; }
+@media (max-width: 600px) {
+  .checkout-wrap { padding: 18px 14px 40px; }
+  .checkout-wrap h1 { font-size: 24px; margin: 0 0 12px; }
+  /* Order summary first, so the total is visible before the form. */
+  .checkout-grid { display: flex; flex-direction: column-reverse; }
+  .order-summary { padding: 14px; margin-bottom: 16px; }
+}
+.phone-field small { text-transform: none; letter-spacing: 0; font-weight: 400; }

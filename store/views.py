@@ -186,14 +186,21 @@ def _new_reference():
     return "KB" + "".join(random.choices(string.ascii_uppercase + string.digits, k=8))
 
 
+@login_required
 def checkout(request):
     cart = Cart(request)
     if not cart.cart:
         return redirect("cart_detail")
-    form = CheckoutForm(request.POST or None, initial={
-        "full_name": getattr(request.user, "first_name", "") or "",
-        "email": getattr(request.user, "email", "") or "",
-    } if not request.POST else None)
+    # Returning customers get their last delivery details filled in; new ones start from the account.
+    last = request.user.orders.order_by("-created_at").first()
+    initial = {
+        "full_name": (last.full_name if last else "") or request.user.get_full_name() or request.user.first_name or "",
+        "email": (last.email if last else "") or request.user.email or "",
+        "phone": last.phone if last else "",
+        "city": last.city if last else "",
+        "address": last.address if last else "",
+    }
+    form = CheckoutForm(request.POST or None, initial=initial if not request.POST else None)
     if request.method == "POST" and form.is_valid():
         payment_method = request.POST.get("payment_method", "mpesa")
         promo_code = request.POST.get("promo", "").strip().upper()
@@ -374,7 +381,7 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect("account")
+            return redirect(request.GET.get("next") or "account")
     else:
         form = UserCreationForm()
     return render(request, "store/register.html", {"form": form})
