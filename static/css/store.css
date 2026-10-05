@@ -912,11 +912,3 @@ img { max-width: 100%; display: block; }
   .tile-media { --tile-inner: 88px; }
   .tile-label { font-size: 12.5px; text-align: center; }
 }
-
-/* Arrow buttons on the phone category rows; swiping works too. */
-.home-row-wrap { position: relative; }
-.row-arrow { position: absolute; top: 34%; transform: translateY(-50%); z-index: 2; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); background: #fff; color: var(--ink); font-size: 24px; line-height: 1; padding: 0 0 3px; cursor: pointer; box-shadow: 0 3px 12px rgba(26,24,21,.2); }
-.row-arrow:hover { background: var(--ink); color: #fff; }
-.row-arrow[hidden] { display: none; }
-.row-prev { left: 4px; }
-.row-next { right: 4px; }

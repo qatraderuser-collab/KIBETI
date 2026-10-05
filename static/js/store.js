@@ -157,20 +157,3 @@ document.addEventListener('DOMContentLoaded', function () {
   if (total) new MutationObserver(label).observe(total, { childList: true, characterData: true, subtree: true });
   label();
 })();
-
-(function () {
-  document.querySelectorAll('.home-row-wrap').forEach(function (wrap) {
-    var row = wrap.querySelector('.home-row-scroll');
-    var prev = wrap.querySelector('.row-prev');
-    var next = wrap.querySelector('.row-next');
-    function sync() {
-      prev.hidden = row.scrollLeft < 8;
-      next.hidden = row.scrollLeft + row.clientWidth >= row.scrollWidth - 8;
-    }
-    prev.addEventListener('click', function () { row.scrollBy({ left: -row.clientWidth * 0.8, behavior: 'smooth' }); });
-    next.addEventListener('click', function () { row.scrollBy({ left: row.clientWidth * 0.8, behavior: 'smooth' }); });
-    row.addEventListener('scroll', sync, { passive: true });
-    window.addEventListener('resize', sync);
-    sync();
-  });
-})();
