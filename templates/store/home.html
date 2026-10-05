@@ -83,7 +83,14 @@
     </aside>
 
     <div class="shop-main">
-      <div class="product-grid">
+      <div class="swipe-rows">
+        {% for row in featured_rows %}
+        <div class="swipe-row">
+          {% for product in row %}{% include "store/partials/product_card.html" %}{% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+      <div class="product-grid home-grid">
         {% for product in featured %}
           {% include "store/partials/product_card.html" %}
         {% endfor %}

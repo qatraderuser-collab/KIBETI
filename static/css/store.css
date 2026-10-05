@@ -898,14 +898,12 @@ img { max-width: 100%; display: block; }
   .tile-label { font-size: 12.5px; text-align: center; }
 }
 
-/* Phone home "Our collection": still a grid (two rows), but it pages sideways — swipe left or right. */
+/* Phone home "Our collection": stacked rows of products; each row swipes left/right on its own. */
+.swipe-rows { display: none; }
 @media (max-width: 600px) {
-  .home-hero .shop-main .product-grid {
-    display: grid; grid-template-columns: none; grid-template-rows: repeat(2, auto);
-    grid-auto-flow: column; grid-auto-columns: calc(50% - 6px); gap: 20px 10px;
-    overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
-    margin: 0 -12px; padding: 0 12px 6px; scroll-padding-left: 12px;
-  }
-  .home-hero .shop-main .product-grid::-webkit-scrollbar { display: none; }
-  .home-hero .shop-main .product-card { scroll-snap-align: start; min-width: 0; }
+  .swipe-rows { display: flex; flex-direction: column; gap: 18px; }
+  .home-hero .home-grid { display: none; }
+  .swipe-row { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin: 0 -12px; padding: 0 12px 4px; scroll-padding-left: 12px; }
+  .swipe-row::-webkit-scrollbar { display: none; }
+  .swipe-row .product-card { flex: 0 0 calc(50% - 8px); min-width: 0; scroll-snap-align: start; }
 }
