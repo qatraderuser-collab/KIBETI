@@ -885,3 +885,18 @@ img { max-width: 100%; display: block; }
   .order-summary { padding: 14px; margin-bottom: 16px; }
 }
 .phone-field small { text-transform: none; letter-spacing: 0; font-weight: 400; }
+
+/* Home on phones: one swipeable row per category (Jumia-style), stacked, each with "See all".
+   Desktop keeps the mixed grid; phones swap it for the rows. */
+.home-rows { display: none; }
+@media (max-width: 600px) {
+  .home-rows { display: block; }
+  .home-hero .home-grid { display: none; }
+  .home-row { margin-bottom: 18px; }
+  .home-row-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px; }
+  .home-row-head h2 { margin: 0; font-size: 18px; }
+  .home-row-head a { color: var(--gold); font-weight: 700; font-size: 14px; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+  .home-row-scroll { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin: 0 -12px; padding: 0 12px 4px; scroll-padding-left: 12px; }
+  .home-row-scroll::-webkit-scrollbar { display: none; }
+  .home-row-scroll .product-card { flex: 0 0 44%; max-width: 180px; scroll-snap-align: start; }
+}

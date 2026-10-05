@@ -86,8 +86,12 @@ def home(request):
     capsule = [{"image": p.primary_image, "alt": p.name} for p in products.select_related("category").prefetch_related("images")[:6]]
     capsule = [c for c in capsule if c["image"]][:3]
     cat_tiles = []
+    cat_rows = []
     for c in Category.objects.all():
-        first = products.filter(category=c).prefetch_related("images").first()
+        row = list(products.filter(category=c).select_related("category").prefetch_related("images")[:8])
+        if row:
+            cat_rows.append({"name": c.name, "url": c.get_absolute_url(), "products": row})
+        first = row[0] if row else None
         img = first.primary_image if first else None
         cat_tiles.append({"name": c.name, "url": c.get_absolute_url(), "image": img})
     return render(
@@ -98,6 +102,7 @@ def home(request):
             "total": products.count(),
             "collections": Category.objects.all(),
             "cat_tiles": cat_tiles,
+            "cat_rows": cat_rows,
             "trending": tiles,
             "capsule": capsule,
         },
