@@ -825,3 +825,33 @@ img { max-width: 100%; display: block; }
   .cat-chip-name { font-size: 12.5px; font-weight: 600; text-align: center; line-height: 1.25; }
   .cat-chip--offer .cat-chip-img { background: var(--gold); border-color: var(--gold); color: #fff; font-size: 34px; }
 }
+
+/* Simpler phone UI (Jumia-style): fewer elements, clear price, one small action per card. */
+@media (max-width: 600px) {
+  /* Home: the filter panel just repeats the category strip and menu. */
+  .home-hero .filter-side { display: none; }
+  .home-hero .collection-head .count { display: none; }
+  .home-hero .collection-head h1 { font-size: 20px; margin: 0; }
+  .home-hero .collection-wrap { padding-top: 14px; }
+  .home-hero .shop-layout { margin-top: 10px; }
+
+  /* Hero: headline and two buttons only. */
+  .hero--editorial .hero-kicker, .hero--editorial p:not(.hero-kicker) { display: none; }
+  .hero.hero--editorial h1 { font-size: 22px; margin: 0 0 12px; }
+  .hero--editorial .hero-inner { padding: 14px 16px 18px; }
+  .hero--editorial .hero-cta .btn-pill { min-height: 40px; padding: 0 18px; font-size: 13px; }
+
+  /* Cards: image, name, price, small add button. */
+  .card-swatches { display: none; }
+  .card-title { font-size: 13px; font-weight: 500; }
+  .card-price .price { font-size: 16px; }
+  .card-price .compare { font-size: 12px; }
+  .card-add .btn-pill { min-height: 38px; padding: 0 10px; font-size: 12px; border-radius: 8px; text-transform: none; letter-spacing: 0; background: var(--gold); }
+  .card-body { gap: 4px; }
+  .card-foot { gap: 6px; }
+
+  /* Statement banner is decoration: shrink it. */
+  .statement-banner { padding: 28px 16px; }
+  .statement-banner h2 { font-size: 26px; }
+  .statement-sub { margin: 8px auto 16px; font-size: 14px; }
+}
