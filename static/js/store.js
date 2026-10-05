@@ -126,3 +126,20 @@ document.addEventListener('DOMContentLoaded', function () {
     t.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 })();
+
+(function () {
+  document.querySelectorAll('.stepper').forEach(function (st) {
+    var input = st.querySelector('input');
+    var form = st.closest('form');
+    var timer;
+    st.querySelectorAll('.step-btn').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var v = Math.max(1, Math.min(99, (parseInt(input.value, 10) || 1) + parseInt(b.dataset.step, 10)));
+        input.value = v;
+        clearTimeout(timer);
+        timer = setTimeout(function () { form.submit(); }, 450);
+      });
+    });
+    input.addEventListener('change', function () { form.submit(); });
+  });
+})();

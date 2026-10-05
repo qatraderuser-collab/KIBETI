@@ -21,8 +21,12 @@
           <form action="{% url 'cart_update' %}" method="post" class="inline-form">
             {% csrf_token %}
             <input type="hidden" name="product_id" value="{{ item.product.id }}">
-            <input type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" class="qty qty-sm">
-            <button type="submit" class="btn-pill btn-ghost btn-sm">Update</button>
+            <div class="stepper">
+              <button type="button" class="step-btn" data-step="-1" aria-label="Decrease quantity">&minus;</button>
+              <input type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" class="qty qty-sm" aria-label="Quantity">
+              <button type="button" class="step-btn" data-step="1" aria-label="Increase quantity">+</button>
+            </div>
+            <noscript><button type="submit" class="btn-pill btn-ghost btn-sm">Update</button></noscript>
           </form>
         </td>
         <td data-label="Total">{{ item.line_total|money_short }}</td>
