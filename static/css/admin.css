@@ -1,0 +1,60 @@
+/* Zuri Luxee admin: same palette and type as the storefront. */
+:root, html[data-theme="light"], html[data-theme="dark"] {
+  --primary: #1a1815;
+  --secondary: #c98a2b;
+  --accent: #c98a2b;
+  --primary-fg: #fff;
+  --body-bg: #f6f1e6;
+  --body-fg: #1a1815;
+  --body-quiet-color: #6f6a62;
+  --body-loud-color: #1a1815;
+  --header-color: #fff;
+  --header-branding-color: #fff;
+  --header-bg: #1a1815;
+  --header-link-color: #f0c98a;
+  --breadcrumbs-fg: #f0c98a;
+  --breadcrumbs-link-fg: #fff;
+  --breadcrumbs-bg: #3a342c;
+  --link-fg: #8a5a12;
+  --link-hover-color: #c98a2b;
+  --link-selected-fg: #c98a2b;
+  --hairline-color: #ddd4c4;
+  --border-color: #ddd4c4;
+  --darkened-bg: #efe8d8;
+  --selected-bg: #fbf1dc;
+  --selected-row: #fbf1dc;
+  --button-bg: #c98a2b;
+  --button-hover-bg: #a9721e;
+  --default-button-bg: #1a1815;
+  --default-button-hover-bg: #000;
+  --object-tools-bg: #1a1815;
+  --object-tools-hover-bg: #c98a2b;
+  --font-family-primary: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+body { background: var(--body-bg); font-size: 15px; }
+#header { padding: 12px 20px; }
+#site-name a { font-family: Georgia, "Times New Roman", serif; font-size: 24px; font-weight: 700; color: #fff; text-decoration: none; }
+#site-name span { color: #c98a2b; }
+#site-name em { font-family: -apple-system, "Segoe UI", sans-serif; font-style: normal; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: #f0c98a; margin-left: 6px; }
+.view-store { color: #f0c98a; font-weight: 600; text-decoration: none; margin-right: 12px; }
+#user-tools { font-size: 13px; }
+h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; }
+.module, #changelist-filter, fieldset.module { border-radius: 14px; overflow: hidden; border: 1px solid var(--border-color); background: #fffdf8; }
+.module h2, .module caption, .inline-group h2 { background: #1a1815; color: #fff; font-family: -apple-system, "Segoe UI", sans-serif; letter-spacing: .8px; text-transform: uppercase; font-size: 12px; }
+.button, input[type=submit], input[type=button], .submit-row input, a.button { border-radius: 999px; padding: 9px 18px; font-weight: 600; }
+.submit-row { border-radius: 14px; background: #fffdf8; }
+input[type=text], input[type=number], input[type=email], input[type=password], input[type=url], select, textarea { border-radius: 9px; padding: 8px 10px; }
+
+/* Dashboard shortcuts */
+.quick-actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 0 0 22px; }
+.quick-actions a { display: flex; flex-direction: column; gap: 4px; padding: 16px; background: #fffdf8; border: 1px solid var(--border-color); border-radius: 14px; text-decoration: none; color: var(--body-fg); transition: border-color .15s, box-shadow .15s, transform .15s; }
+.quick-actions a:hover { border-color: #c98a2b; box-shadow: 0 8px 20px rgba(26,24,21,.1); transform: translateY(-2px); }
+.quick-actions strong { font-size: 16px; }
+.quick-actions span { font-size: 13px; color: var(--body-quiet-color); }
+.thumb-sm { width: 44px; height: 44px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border-color); }
+.status-pill { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+.status-paid { background: #eaf7ef; color: #17724a; }
+.status-pending { background: #fff3d6; color: #8a5a12; }
+.status-cod { background: #e8eefc; color: #2c4a9a; }
+
+@media (max-width: 767px) { #header { padding: 10px 14px; } .quick-actions { grid-template-columns: 1fr 1fr; } }

@@ -1,0 +1,11 @@
+{% extends "admin/index.html" %}
+{% block content %}
+<div class="quick-actions">
+  <a href="{% url 'admin:store_order_changelist' %}"><strong>Orders</strong><span>See new orders, mark them paid</span></a>
+  <a href="{% url 'admin:store_product_changelist' %}"><strong>Products</strong><span>Edit prices and stock</span></a>
+  <a href="{% url 'admin:store_product_add' %}"><strong>+ Add product</strong><span>List a new bag</span></a>
+  <a href="{% url 'admin:store_promo_changelist' %}"><strong>Promo codes</strong><span>Create and switch off offers</span></a>
+  <a href="{% url 'dashboard' %}"><strong>Sales dashboard</strong><span>Revenue and low stock</span></a>
+</div>
+{{ block.super }}
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "admin/base.html" %}
+{% load static %}
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | Zuri Luxee admin{% endblock %}
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static 'css/admin.css' %}?v={% now 'U' %}">{% endblock %}
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Zuri Luxee<span>.</span> <em>Admin</em></a></h1>
+{% endblock %}
+{% block nav-global %}<a class="view-store" href="/">View store &rarr;</a>{% endblock %}
