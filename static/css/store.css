@@ -897,3 +897,15 @@ img { max-width: 100%; display: block; }
   .tile-media { --tile-inner: 88px; }
   .tile-label { font-size: 12.5px; text-align: center; }
 }
+
+/* Phone home "Our collection": still a grid (two rows), but it pages sideways — swipe left or right. */
+@media (max-width: 600px) {
+  .home-hero .shop-main .product-grid {
+    display: grid; grid-template-columns: none; grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column; grid-auto-columns: calc(50% - 6px); gap: 20px 10px;
+    overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
+    margin: 0 -12px; padding: 0 12px 6px; scroll-padding-left: 12px;
+  }
+  .home-hero .shop-main .product-grid::-webkit-scrollbar { display: none; }
+  .home-hero .shop-main .product-card { scroll-snap-align: start; min-width: 0; }
+}
