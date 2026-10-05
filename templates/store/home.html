@@ -83,17 +83,7 @@
     </aside>
 
     <div class="shop-main">
-      <div class="home-rows">
-        {% for row in cat_rows %}
-        <section class="home-row">
-          <div class="home-row-head"><h2>{{ row.name }}</h2><a href="{{ row.url }}">See all &rsaquo;</a></div>
-          <div class="home-row-scroll">
-            {% for product in row.products %}{% include "store/partials/product_card.html" %}{% endfor %}
-          </div>
-        </section>
-        {% endfor %}
-      </div>
-      <div class="product-grid home-grid">
+      <div class="product-grid">
         {% for product in featured %}
           {% include "store/partials/product_card.html" %}
         {% endfor %}
